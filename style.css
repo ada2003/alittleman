@@ -1,0 +1,426 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    background-color:  #F6EFE3A3
+;
+}
+
+.navbar {
+    background: #FEFDF9;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+   z-index: 9999; 
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 71px;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.05);
+}
+
+.nav-menu {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 40px;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-link {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0.08em;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #333;
+    transition: all 0.3s ease;
+    position: relative;
+    padding: 10px 0;
+}
+
+.nav-link:hover {
+    color: #666;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background: #333;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.social-icons {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+
+.social-icon {
+    color: #333;
+    font-size: 20px;
+    transition: all 0.3s ease;
+    padding: 8px;
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    color: #666;
+    transform: translateY(-2px);
+    background: rgba(0,0,0,0.05);
+}
+
+.mobile-menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.mobile-menu-toggle span {
+    width: 25px;
+    height: 3px;
+    background: #333;
+    margin: 3px 0;
+    transition: 0.3s;
+}
+
+.mobile-menu-toggle.active span:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.mobile-menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.mobile-menu-toggle.active span:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 768px) {
+    .navbar-container {
+        padding: 0 15px;
+    }
+
+    .mobile-menu-toggle {
+        display: flex;
+    }
+
+    .nav-menu {
+        position: fixed;
+        top: 90px;
+        left: -100%;
+        width: 100%;
+        flex-direction: column;
+        background: #FEFDF9;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0,0,0,0.05);
+        padding: 20px 0;
+        gap: 20px;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 10px 0;
+    }
+
+    .social-icons {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        flex-direction: column;
+        gap: 15px;
+        background: #FEFDF9;
+        padding: 15px;
+        border-radius: 50px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .social-icon {
+        font-size: 18px;
+    }
+
+    .logo img {
+        height: 50px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navbar-container {
+        padding: 0 10px;
+    }
+
+    .nav-link {
+        font-size: 16px;
+    }
+
+    .logo img {
+        height: 45px;
+    }
+
+    .social-icons {
+        bottom: 15px;
+        right: 15px;
+        padding: 12px;
+    }
+}
+
+/* Content area to show navbar in action */
+.content {
+    margin-top: 100px;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.placeholder-logo {
+    width: 180px;
+    height: 60px;
+    background: linear-gradient(135deg, #333, #666);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+/* Recent gallery section */
+
+        .recent-films-section {
+            background-color: #F6EFE3A3;
+            padding: 80px 20px 100px;
+            min-height: 100vh;
+        }
+
+        .section-title {
+            font-family: Oswald;
+            font-weight: 400;
+            font-size: 85px;
+            line-height: 104%;
+            letter-spacing: 3%;
+            text-align: center;
+            text-transform: uppercase;
+            color: #2c2c2c;
+            margin-bottom: 80px;
+        }
+
+        .films-container {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            max-width: 1400px;
+            margin: 0 auto;
+            flex-wrap: wrap;
+        }
+
+        .film-card {
+            width: 320px;
+            text-align: left;
+        }
+
+        .film-image-container {
+            position: relative;
+            width: 100%;
+            height: 520px;
+           
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .film-image-container:hover {
+            transform: translateY(-5px);
+        }
+
+     
+
+        .film-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .film-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.4) 100%);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 30px;
+        }
+
+        .view-film-btn {
+            width: 176px;
+            height: 67px;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            border: none;
+            font-family: Oswald;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 100%;
+            letter-spacing: 8%;
+            text-align: center;
+            text-transform: uppercase;
+            cursor: pointer;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+           
+        }
+
+        .view-film-btn:hover {
+            background-color: rgba(0, 0, 0, 1);
+            transform: scale(1.05);
+        }
+
+        .film-details {
+            margin-top: 20px;
+            text-align: left;
+        }
+
+        .film-title {
+            font-family: Oswald;
+            font-weight: 500;
+            font-size: 21px;
+            line-height: 187%;
+            letter-spacing: 2%;
+            color: #2c2c2c;
+            margin-bottom: 5px;
+        }
+
+        .film-date {
+            font-family: Raleway;
+            font-weight: 600;
+            font-style: italic;
+            font-size: 16px;
+            line-height: 187%;
+            letter-spacing: 2%;
+            color: #666;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .section-title {
+                font-size: 65px;
+            }
+            
+            .films-container {
+                gap: 30px;
+            }
+            
+            .film-image-container {
+                width: 280px;
+                height: 460px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .recent-films-section {
+                padding: 60px 20px 80px;
+            }
+            
+            .section-title {
+                font-size: 45px;
+                margin-bottom: 60px;
+            }
+            
+            .films-container {
+                flex-direction: column;
+                align-items: center;
+                gap: 30px;
+            }
+            
+            .film-image-container {
+                width: 100%;
+                max-width: 350px;
+                height: 500px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .section-title {
+                font-size: 35px;
+            }
+            
+            .film-overlay {
+                padding: 20px;
+            }
+            
+            .view-film-btn {
+                width: 150px;
+                height: 55px;
+                font-size: 16px;
+            }
+            
+            .film-title {
+                font-size: 18px;
+            }
+            
+            .film-date {
+                font-size: 14px;
+            }
+        }
+/* recent gallery end */
