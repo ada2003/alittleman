@@ -36,10 +36,10 @@
 
             <!-- Social Media Icons -->
             <div class="social-icons">
-                <a href="#" class="social-icon" aria-label="Facebook">
+                <a href="https://m.facebook.com/alittleman0/" class="social-icon" aria-label="Facebook">
                     <i class="fab fa-facebook-f"></i>
                 </a>
-                <a href="#" class="social-icon" aria-label="Instagram">
+                <a href="https://www.instagram.com/alittleman_?igsh=MWo3N3lwcmJ1c2pk" class="social-icon" aria-label="Instagram">
                     <i class="fab fa-instagram"></i>
                 </a>
                 <a href="#" class="social-icon" aria-label="Pinterest">
@@ -88,7 +88,21 @@
             }
         });
 
-       
+    //sroll
+    document.querySelectorAll('.scroll-link').forEach(link => {
+    link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+        const targetSection = document.getElementById(targetId);
+        
+        if (targetSection) {
+            targetSection.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    });
+});
     </script>
 </body>
 
