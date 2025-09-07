@@ -80,7 +80,6 @@
 
         .gallery-item {
             overflow: hidden;
- 
             cursor: pointer;
             transition: transform 0.3s ease;
         }
@@ -94,6 +93,78 @@
             height: 100%;
             object-fit: cover;
             display: block;
+        }
+
+        /* Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 9999;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            animation: fadeIn 0.3s ease;
+        }
+
+        .modal.active {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content {
+            position: relative;
+            max-width: 90%;
+            max-height: 90%;
+            margin: auto;
+            animation: zoomIn 0.3s ease;
+        }
+
+        .modal-image {
+            width: 700px;
+            height: 700px;
+            object-fit: contain;
+            border-radius: 8px;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: -40px;
+            right: 0;
+            color: #fff;
+            font-size: 35px;
+            font-weight: bold;
+            cursor: pointer;
+            background: rgba(0, 0, 0, 0.5);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .close-btn:hover {
+            background: rgba(0, 0, 0, 0.8);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes zoomIn {
+            from { 
+                opacity: 0;
+                transform: scale(0.5);
+            }
+            to { 
+                opacity: 1;
+                transform: scale(1);
+            }
         }
 
         /* Specific positioning for masonry layout - Extended Pattern */
@@ -391,6 +462,18 @@
                 grid-column: 2;
                 grid-row: 11;
             }
+
+            .modal-content {
+                max-width: 95%;
+                max-height: 85%;
+            }
+
+            .close-btn {
+                top: -35px;
+                font-size: 30px;
+                width: 35px;
+                height: 35px;
+            }
         }
 
         @media (max-width: 480px) {
@@ -425,6 +508,18 @@
             .gallery-item:nth-child(16) {
                 grid-column: 1;
                 grid-row: auto;
+            }
+
+            .modal-content {
+                max-width: 98%;
+                max-height: 80%;
+            }
+
+            .close-btn {
+                top: -30px;
+                font-size: 25px;
+                width: 30px;
+                height: 30px;
             }
         }
           /* --- keep all your CSS same as before --- */
@@ -627,7 +722,7 @@
                         $imageUrl = isset($image['url']) ? $image['url'] : $image['image'];
                         $altText = $image['alt'];
                         ?>
-                        <div class="gallery-item">
+                        <div class="gallery-item" onclick="openModal('<?php echo $imageUrl; ?>', '<?php echo $altText; ?>')">
                             <img src="<?php echo $imageUrl; ?>" alt="<?php echo $altText; ?>">
                         </div>
                         <?php
@@ -639,7 +734,55 @@
             </div>
         </div>
     </section>
+
+    <!-- Modal for Image Popup -->
+    <div id="imageModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <img class="modal-image" id="modalImage" src="" alt="">
+        </div>
+    </div>
+
     <?php include './contact.php'; ?>
     <?php include './footer.php'; ?>
+
+    <script>
+        // Function to open modal
+        function openModal(imageSrc, imageAlt) {
+            const modal = document.getElementById('imageModal');
+            const modalImg = document.getElementById('modalImage');
+            
+            modal.classList.add('active');
+            modalImg.src = imageSrc;
+            modalImg.alt = imageAlt;
+            
+            // Prevent body scrolling when modal is open
+            document.body.style.overflow = 'hidden';
+        }
+
+        // Function to close modal
+        function closeModal() {
+            const modal = document.getElementById('imageModal');
+            modal.classList.remove('active');
+            
+            // Re-enable body scrolling
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal when clicking outside the image
+        window.onclick = function(event) {
+            const modal = document.getElementById('imageModal');
+            if (event.target === modal) {
+                closeModal();
+            }
+        }
+
+        // Close modal with Escape key
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                closeModal();
+            }
+        });
+    </script>
 </body>
 </html>

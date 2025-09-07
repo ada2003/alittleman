@@ -338,7 +338,7 @@
             <h1 class="main-headings">Our Portfolio</h1>
             <p class="subheading">Wedding & Storytelling Photographers</p>
             <p class="description">Capturing timeless love through real, unscripted moments.</p>
-            <a href="#" class="explore-btn">Explore Our Work →</a>
+            <a href="https://www.instagram.com/accounts/login/?next=%2Falittleman_%2F&source=omni_redirect" class="explore-btn">Explore Our Work →</a>
         </div>
     </section>
 

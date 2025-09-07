@@ -30,7 +30,7 @@
                     <a href="#book" class="nav-link">Book Now</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#contact" class="nav-link">Contact</a>
+                    <a href="https://wa.me/917741975188" class="nav-link">Contact</a>
                 </li>
             </ul>
 

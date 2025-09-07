@@ -71,13 +71,13 @@
             position: absolute;
             left: -80px;
             top: -20px;
-            font-family: serif;
+            font-family: Rozha One;
         }
 
         .testimonial-text {
             font-family: Raleway;
             font-weight: 400;
-            font-size: 36px;
+            font-size: 28px;
             line-height: 160%;
             letter-spacing: 2%;
             color: #333;
@@ -93,8 +93,8 @@
 
         .client-names {
             font-family: Oswald;
-            font-weight: 600;
-            font-size: 30px;
+      
+            font-size: 20px;
             line-height: 180%;
             letter-spacing: 0%;
             text-transform: capitalize;
@@ -187,7 +187,7 @@
             }
 
             .testimonial-text {
-                font-size: 24px;
+                font-size: 20px;
                 padding-left: 20px;
                 text-align: center;
             }
@@ -265,13 +265,13 @@
 
         <!-- Testimonial Section -->
         <div class="testimonial-section">
-            <div class="quote-icon">"</div>
+           
             <div class="testimonial-text">
                 They captured our wedding day like it was a fairytale — full of laughter, love, and little things we didn't even notice.
             </div>
             <div class="client-info">
-                <div class="client-names">— Anaya & Raghav</div>
-                <div class="client-type">Happy Couple</div>
+                <div class="client-names"><b>- Anaya & Raghav </b> /  Happy Couple </div>
+        
             </div>
         </div>
     </div>
