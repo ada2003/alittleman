@@ -1,45 +1,3 @@
-<?php
-// contact.php
-$message_sent = false;
-$error_message = '';
-
-if ($_POST) {
-    // Get form data and sanitize
-    $name = filter_var($_POST['name'], FILTER_SANITIZE_STRING);
-    $email = filter_var($_POST['email'], FILTER_VALIDATE_EMAIL);
-    $message = filter_var($_POST['message'], FILTER_SANITIZE_STRING);
-    
-    // Validation
-    if (empty($name) || empty($email) || empty($message)) {
-        $error_message = 'Please fill in all fields.';
-    } elseif (!$email) {
-        $error_message = 'Please enter a valid email address.';
-    } else {
-        // Email configuration
-        $to = 'salveadarsh06@gmail.com'; // Your email address
-        $subject = 'New Contact Form Submission from ' . $name;
-        
-        // Email content
-        $email_body = "You have received a new message from your website contact form.\n\n";
-        $email_body .= "Name: " . $name . "\n";
-        $email_body .= "Email: " . $email . "\n";
-        $email_body .= "Message:\n" . $message . "\n";
-        
-        // Email headers
-        $headers = "From: " . $email . "\r\n";
-        $headers .= "Reply-To: " . $email . "\r\n";
-        $headers .= "X-Mailer: PHP/" . phpversion();
-        
-        // Send email
-        if (mail($to, $subject, $email_body, $headers)) {
-            $message_sent = true;
-        } else {
-            $error_message = 'Sorry, there was an error sending your message. Please try again.';
-        }
-    }
-}
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -48,6 +6,7 @@ if ($_POST) {
     <title>Contact Us Section</title>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&family=Raleway:wght@400;500&display=swap" rel="stylesheet">
     <style>
+       
         .contact-section {
             background-color: #F9F9F9;
             padding: 80px 40px;
@@ -94,6 +53,7 @@ if ($_POST) {
 
         .office-details {
             font-family: Raleway;
+         
             font-style: italic;
             font-size: 18px;
             line-height: 100%;
@@ -188,28 +148,6 @@ if ($_POST) {
 
         .send-button:hover {
             background-color: #333;
-        }
-
-        .success-message {
-            background-color: #d4edda;
-            border: 1px solid #c3e6cb;
-            color: #155724;
-            padding: 15px;
-            border-radius: 5px;
-            margin-bottom: 20px;
-            font-family: Raleway;
-            font-size: 16px;
-        }
-
-        .error-message {
-            background-color: #f8d7da;
-            border: 1px solid #f5c6cb;
-            color: #721c24;
-            padding: 15px;
-            border-radius: 5px;
-            margin-bottom: 20px;
-            font-family: Raleway;
-            font-size: 16px;
         }
 
         @media (max-width: 768px) {
@@ -309,35 +247,21 @@ if ($_POST) {
                 <a href="#" class="get-location">Get location</a>
             </div>
             
-            <form class="contact-form" method="POST" action="">
-                <?php if ($message_sent): ?>
-                    <div class="success-message">
-                        Thank you! Your message has been sent successfully. We'll get back to you soon.
-                    </div>
-                <?php endif; ?>
-                
-                <?php if ($error_message): ?>
-                    <div class="error-message">
-                        <?php echo $error_message; ?>
-                    </div>
-                <?php endif; ?>
-                
+            <div class="contact-form">
                 <div class="form-group">
-                    <input type="text" name="name" class="form-input" placeholder="Write your name here" 
-                           value="<?php echo isset($_POST['name']) ? htmlspecialchars($_POST['name']) : ''; ?>" required>
+                    <input type="text" class="form-input" placeholder="Write your name here" required>
                 </div>
                 
                 <div class="form-group">
-                    <input type="email" name="email" class="form-input" placeholder="Write your email address" 
-                           value="<?php echo isset($_POST['email']) ? htmlspecialchars($_POST['email']) : ''; ?>" required>
+                    <input type="email" class="form-input" placeholder="Write your email address" required>
                 </div>
                 
                 <div class="form-group">
-                    <textarea name="message" class="form-input message-input" placeholder="Write your messages here" required><?php echo isset($_POST['message']) ? htmlspecialchars($_POST['message']) : ''; ?></textarea>
+                    <textarea class="form-input message-input" placeholder="Write your messages here" required></textarea>
                 </div>
                 
                 <button type="submit" class="send-button">Send it</button>
-            </form>
+            </div>
         </div>
     </section>
 </body>
