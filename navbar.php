@@ -13,10 +13,9 @@
         <div class="navbar-container">
             <!-- Logo Section -->
             <div class="logo">
-                <!-- Replace this placeholder with your actual logo -->
-                <!-- <div class="placeholder-logo">A Little Man</div> -->
-                <!-- Uncomment and use this for your actual logo image -->
-                <img src="./assets/logo.jpg" alt="A Little Man Logo">
+             <a href="./index.php">
+    <img src="./assets/logo.jpg" alt="A Little Man Logo">
+  </a>
             </div>
 
             <!-- Navigation Menu -->

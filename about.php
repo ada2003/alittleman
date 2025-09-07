@@ -218,7 +218,7 @@
                 <p class="description">
                     We're two brothers with a camera and a shared love for storytelling. Our goal? To capture what it feels like to be in love — not just what it looks like. Raw. Honest. Poetic.
                 </p>
-                <a href="#" class="know-more-btn">Know More</a>
+                <a href="https://www.instagram.com/accounts/login/?next=%2Falittleman_%2F&source=omni_redirect" class="know-more-btn">Know More</a>
             </div>
         </div>
     </section>

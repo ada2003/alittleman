@@ -341,7 +341,7 @@
                 </div>
             </div>
             
-            <a href="#" class="view-all-btn">View All →</a>
+            <a href="./portfolio.php" class="view-all-btn">View All →</a>
         </div>
     </section>
 </body>

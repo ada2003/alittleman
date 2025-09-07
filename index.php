@@ -20,53 +20,90 @@
 <?php include "./video.php" ?>
 
 <!-- recent gallery section -->
- <section class="recent-films-section">
+ <!-- recent gallery section -->
+    <section class="recent-films-section">
         <h2 class="section-title">Our Recent Films</h2>
         
-        <div class="films-container">
-            <!-- Film Card 1 -->
-            <div class="film-card">
-                <div class="film-image-container">
-                    <img src="https://images.unsplash.com/photo-1606800052052-a08af7148866?w=400&h=600&fit=crop&crop=faces" alt="Aman & Jasmeet Film 1" class="film-image">
-                    <div class="film-overlay">
-                        <button class="view-film-btn">View Film →</button>
-                    </div>
-                </div>
-                <div class="film-details">
-                    <div class="film-title">AMAN & JASMEET</div>
-                    <div class="film-date">JULY 1, 2025</div>
-                </div>
-            </div>
-            
-            <!-- Film Card 2 -->
-            <div class="film-card">
-                <div class="film-image-container">
-                    <img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=400&h=600&fit=crop&crop=faces" alt="Aman & Jasmeet Film 2" class="film-image">
-                    <div class="film-overlay">
-                        <button class="view-film-btn">View Film →</button>
-                    </div>
-                </div>
-                <div class="film-details">
-                    <div class="film-title">AMAN & JASMEET</div>
-                    <div class="film-date">JULY 1, 2025</div>
-                </div>
-            </div>
-            
-            <!-- Film Card 3 -->
-            <div class="film-card">
-                <div class="film-image-container">
-                    <img src="https://images.unsplash.com/photo-1594736797933-d0300ad6d0ce?w=400&h=600&fit=crop&crop=faces" alt="Aman & Jasmeet Film 3" class="film-image">
-                    <div class="film-overlay">
-                        <button class="view-film-btn">View Film →</button>
-                    </div>
-                </div>
-                <div class="film-details">
-                    <div class="film-title">AMAN & JASMEET</div>
-                    <div class="film-date">JULY 1, 2025</div>
-                </div>
-            </div>
+        <div class="films-container" id="filmsContainer">
+            <div class="loading-placeholder">Loading couples...</div>
         </div>
     </section>
+
+<script>
+        // Function to format date
+        function formatDate(dateString) {
+            const date = new Date(dateString);
+            const options = { year: 'numeric', month: 'long', day: 'numeric' };
+            return date.toLocaleDateString('en-US', options).toUpperCase();
+        }
+
+        // Function to create a film card
+        function createFilmCard(couple, index) {
+            const filmCard = document.createElement('div');
+            filmCard.className = 'film-card';
+            filmCard.style.animationDelay = `${(index + 1) * 0.1}s`;
+            
+            filmCard.innerHTML = `
+                <div class="film-image-container">
+                    <img src="${couple.cardImage}" 
+                         alt="${couple.coupleName} Film" 
+                         class="film-image loading"
+                         onload="this.classList.remove('loading')"
+                         onerror="this.src='https://images.unsplash.com/photo-1606800052052-a08af7148866?w=400&h=600&fit=crop&crop=faces'">
+                    <div class="film-overlay">
+                        <button class="view-film-btn" onclick="viewFilm('${couple.coupleName}', ${couple.id})">View Film →</button>
+                    </div>
+                </div>
+                <div class="film-details">
+                    <div class="film-title">${couple.coupleName}</div>
+                    <div class="film-date">${formatDate(couple.date)}</div>
+                </div>
+            `;
+            
+            return filmCard;
+        }
+
+        // Function to handle view film button click
+        function viewFilm(coupleName, coupleId) {
+            // Redirect to gallery page with couple_id parameter
+            window.location.href = `portfoliogallery.php?couple_id=${coupleId}`;
+        }
+
+        // Function to load couples data
+        async function loadCouples() {
+            const filmsContainer = document.getElementById('filmsContainer');
+            
+            try {
+                const response = await fetch('./content.json');
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                
+                const jsonData = await response.json();
+
+                // Clear loading placeholder
+                filmsContainer.innerHTML = '';
+
+                // Create film cards for each couple
+                jsonData.couples.forEach((couple, index) => {
+                    const filmCard = createFilmCard(couple, index);
+                    filmsContainer.appendChild(filmCard);
+                });
+
+            } catch (error) {
+                console.error('Error loading couples data:', error);
+                filmsContainer.innerHTML = `
+                    <div class="error-message">
+                        Error loading couples data. Please try again later.
+                    </div>
+                `;
+            }
+        }
+
+        // Load couples when page is ready
+        document.addEventListener('DOMContentLoaded', loadCouples);
+    </script>
  <!-- End section -->
   <?php
   include './contact.php'
