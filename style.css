@@ -39,8 +39,8 @@ html{
 }
 
 .logo img {
-    height: 71px;
-    width: auto;
+    height: 90px;
+    width: 120px;
     transition: transform 0.3s ease;
 }
 

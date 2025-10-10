@@ -723,7 +723,7 @@
                         $altText = $image['alt'];
                         ?>
                         <div class="gallery-item" onclick="openModal('<?php echo $imageUrl; ?>', '<?php echo $altText; ?>')">
-                            <img src="<?php echo $imageUrl; ?>" alt="<?php echo $altText; ?>">
+                            <img loading="lazy" src="<?php echo $imageUrl; ?>" alt="<?php echo $altText; ?>">
                         </div>
                         <?php
                     }
@@ -739,7 +739,7 @@
     <div id="imageModal" class="modal">
         <div class="modal-content">
             <span class="close-btn" onclick="closeModal()">&times;</span>
-            <img class="modal-image" id="modalImage" src="" alt="">
+            <img loading="lazy" class="modal-image" id="modalImage" src="" alt="">
         </div>
     </div>
 

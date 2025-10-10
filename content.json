@@ -4,101 +4,101 @@
       "id": 1,
       "coupleName": "shaheen & kuldeep",
       "date": "June 15, 2024",
-      "cardImage": "./assets/portfolio_img/shaheen_kuldeep/cardimage1.jpg",
+      "cardImage": "./assets/portfolio_img/couple_01/cardimage1.jpg",
       "galleryImages": [
         {
           "id": 1,
-          "url": "./assets/portfolio_img/shaheen_Kuldeep/i1.jpg",
+          "url": "./assets/portfolio_img/couple_01/i1.jpg",
           "alt": "Sarah & Michael - Wedding Ceremony",
           "category": "ceremony"
         },
         {
           "id": 2,
-          "url": "./assets/portfolio_img/shaheen_Kuldeep/i2.jpg",
+          "url": "./assets/portfolio_img/couple_01/i2.jpg",
           "alt": "Sarah & Michael - First Dance",
           "category": "reception"
         },
         {
           "id": 3,
-          "url": "./assets/portfolio_img/shaheen_Kuldeep/i3.jpg",
+          "url": "./assets/portfolio_img/couple_01/i3.jpg",
           "alt": "Sarah & Michael - Couple Portrait",
           "category": "portraits"
         },
         {
           "id": 4,
-          "url": "./assets/portfolio_img/shaheen_Kuldeep/i4.jpg",
+          "url": "./assets/portfolio_img/couple_01/i4.jpg",
           "alt": "Sarah & Michael - Ring Exchange",
           "category": "ceremony"
         },
         {
           "id": 5,
-          "url": "./assets/portfolio_img/shaheen_Kuldeep/i5.jpg",
+          "url": "./assets/portfolio_img/couple_01/i5.jpg",
           "alt": "Sarah & Michael - Bridal Preparations",
           "category": "preparations"
         },
         {
           "id": 6,
-          "url": "./assets/portfolio_img/shaheen_Kuldeep/i6.jpg",
+          "url": "./assets/portfolio_img/couple_01/i6.jpg",
           "alt": "Sarah & Michael - Wedding Party",
           "category": "group"
         },
         {
           "id": 7,
-          "url": "./assets/portfolio_img/shaheen_Kuldeep/i7.jpg",
+          "url": "./assets/portfolio_img/couple_01/i7.jpg",
           "alt": "Sarah & Michael - Sunset Photos",
           "category": "portraits"
         },
         {
           "id": 8,
-          "url": "./assets/portfolio_img/shaheen_Kuldeep/i8.jpg",
+          "url": "./assets/portfolio_img/couple_01/i8.jpg",
           "alt": "Sarah & Michael - Cake Cutting",
           "category": "reception"
         },
         {
           "id": 9,
-          "url": "./assets/portfolio_img/shaheen_Kuldeep/i9.jpg",
+          "url": "./assets/portfolio_img/couple_01/i9.jpg",
           "alt": "Sarah & Michael - Walking Down Aisle",
           "category": "ceremony"
         },
         {
           "id": 10,
-          "url": "./assets/portfolio_img/shaheen_Kuldeep/i10.jpg",
+          "url": "./assets/portfolio_img/couple_01/i10.jpg",
           "alt": "Sarah & Michael - Reception Dance",
           "category": "reception"
         },
         {
           "id": 11,
-          "url": "./assets/portfolio_img/shaheen_Kuldeep/i11.jpg",
+          "url": "./assets/portfolio_img/couple_01/i11.jpg",
           "alt": "Sarah & Michael - Romantic Kiss",
           "category": "portraits"
         },
         {
           "id": 12,
-          "url": "./assets/portfolio_img/shaheen_Kuldeep/i12.jpg",
+          "url": "./assets/portfolio_img/couple_01/i12.jpg",
           "alt": "Sarah & Michael - Venue Details",
           "category": "details"
         },
         {
           "id": 13,
-          "url": "./assets/portfolio_img/shaheen_Kuldeep/i13.jpg",
+          "url": "./assets/portfolio_img/couple_01/i13.jpg",
           "alt": "Sarah & Michael - Family Photos",
           "category": "group"
         },
           {
           "id": 14,
-          "url": "./assets/portfolio_img/shaheen_Kuldeep/cardimage1.jpg",
+          "url": "./assets/portfolio_img/couple_01/cardimage1.jpg",
           "alt": "Sarah & Michael - Family Photos",
           "category": "group"
         },
           {
           "id": 14,
-          "url": "./assets/portfolio_img/shaheen_Kuldeep/i10.jpg",
+          "url": "./assets/portfolio_img/couple_01/i10.jpg",
           "alt": "Sarah & Michael - Reception Dance",
           "category": "reception"
         },
         {
           "id": 15,
-          "url": "./assets/portfolio_img/shaheen_Kuldeep/i14.jpg",
+          "url": "./assets/portfolio_img/couple_01/i14.jpg",
           "alt": "Sarah & Michael - Grand Exit",
           "category": "ceremony"
         }

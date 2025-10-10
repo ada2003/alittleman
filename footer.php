@@ -111,6 +111,24 @@
             grid-column: 1 / -1;
         }
 
+        .footer-logo {
+    max-width: 200px;
+    height: 120;
+ 
+}
+@media (max-width: 768px) {
+    .footer-logo {
+        max-width: 150px;
+     
+    }
+}
+@media (max-width: 480px) {
+    .footer-logo {
+        max-width: 120px;
+    
+    }
+}
+
         /* Responsive Design */
         @media (max-width: 1024px) {
             .footer {
@@ -200,7 +218,7 @@
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-section">
-                <h2>A Little Man</h2>
+            <img src="./assets/whitelogo.png" alt="A Little Man Logo" class="footer-logo">
                 <p class="footer-description">
                     Capturing honest love stories across India and beyond.<br>
                     Made with heart, told through our lens.<br>

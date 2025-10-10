@@ -14,7 +14,7 @@
             <!-- Logo Section -->
             <div class="logo">
              <a href="./index.php">
-    <img src="./assets/logo.jpg" alt="A Little Man Logo">
+    <img src="./assets/blacklogo.png" alt="A Little Man Logo">
   </a>
             </div>
 

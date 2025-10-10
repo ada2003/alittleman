@@ -316,28 +316,28 @@
             
             <div class="gallery-grid">
                 <div class="gallery-item small-image">
-                    <img src="./assets/up1.jpg" alt="Wedding Photo 1">
+                    <img src="./assets/up1.jpg" alt="Wedding Photo 1" loading="lazy">
                 </div>
                 <div class="gallery-item big-image">
-                    <img src="./assets/up2.jpg" alt="Wedding Photo 2">
+                    <img src="./assets/up2.jpg" alt="Wedding Photo 2"loading="lazy">
                 </div>
                 <div class="gallery-item small-image">
-                    <img src="./assets/up3.png" alt="Wedding Photo 3">
+                    <img src="./assets/up3.png" alt="Wedding Photo 3"loading="lazy">
                 </div>
                 <div class="gallery-item big-image">
-                    <img src="./assets/up4.jpg" alt="Wedding Photo 4">
+                    <img src="./assets/up4.jpg" alt="Wedding Photo 4"loading="lazy">
                 </div>
                 <div class="gallery-item big-image">
-                    <img src="./assets/b1.png" alt="Wedding Photo 5">
+                    <img src="./assets/b1.png" alt="Wedding Photo 5"loading="lazy">
                 </div>
                 <div class="gallery-item small-image">
-                    <img src="./assets/b2.png" alt="Wedding Photo 6">
+                    <img src="./assets/b2.png" alt="Wedding Photo 6"loading="lazy">
                 </div>
                 <div class="gallery-item big-image">
-                    <img src="./assets/b3.png" alt="Wedding Photo 7">
+                    <img src="./assets/b3.png" alt="Wedding Photo 7"loading="lazy">
                 </div>
                 <div class="gallery-item small-image">
-                    <img src="./assets/b4.png" alt="Wedding Photo 8">
+                    <img src="./assets/b4.png" alt="Wedding Photo 8"loading="lazy">
                 </div>
             </div>
             

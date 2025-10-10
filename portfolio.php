@@ -361,7 +361,7 @@
                         ?>
                         <div class="film-card">
                             <div class="film-image-container">
-                                <img src="<?php echo $cardImage; ?>" alt="<?php echo $name; ?> Card Image" class="film-image">
+                                <img loading="lazy" src="<?php echo $cardImage; ?>" alt="<?php echo $name; ?> Card Image" class="film-image">
                                 <div class="film-overlay">
                                     <a href="portfoliogallery.php?couple_id=<?php echo $coupleId; ?>" class="view-film-btn">View Film →</a>
                                 </div>

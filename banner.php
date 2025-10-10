@@ -264,7 +264,7 @@
                 Wedding & Storytelling Photographers<br>
                 Capturing timeless love through real, unscripted moments.
             </p>
-            <a href="./portfolio.php" class="cta-button">EXPLORE OUR WORK</a>
+            <a href="./portfolio.php" class="cta-button" loading="lazy">EXPLORE OUR WORK</a>
         </div>
     </div>
 </body>
