@@ -311,6 +311,319 @@
           "category": "ceremony"
         }
       ]
+    },
+    {
+      "id": 4,
+      "coupleName": "Aman & Gunjeet",
+      "date": "June 15, 2024",
+      "cardImage": "./assets/portfolio_img/Aman_Gunjeet/display.webp",
+      "galleryImages": [
+        {
+          "id": 1,
+          "url": "./assets/portfolio_img/Aman_Gunjeet/9V4A0103.webp",
+          "alt": "Sarah & Michael - Wedding Ceremony",
+          "category": "ceremony"
+        },
+        {
+          "id": 2,
+          "url": "./assets/portfolio_img/Aman_Gunjeet/9V4A0191.webp",
+          "alt": "Sarah & Michael - First Dance",
+          "category": "reception"
+        },
+        {
+          "id": 3,
+          "url": "./assets/portfolio_img/Aman_Gunjeet/9V4A0206.webp",
+          "alt": "Sarah & Michael - Couple Portrait",
+          "category": "portraits"
+        },
+        {
+          "id": 4,
+          "url": "./assets/portfolio_img/Aman_Gunjeet/9V4A0212.webp",
+          "alt": "Sarah & Michael - Ring Exchange",
+          "category": "ceremony"
+        },
+        {
+          "id": 5,
+          "url": "./assets/portfolio_img/Aman_Gunjeet/9V4A0225.webp",
+          "alt": "Sarah & Michael - Bridal Preparations",
+          "category": "preparations"
+        },
+        {
+          "id": 6,
+          "url": "./assets/portfolio_img/Aman_Gunjeet/9V4A0218.webp",
+          "alt": "Sarah & Michael - Wedding Party",
+          "category": "group"
+        },
+        {
+          "id": 7,
+          "url": "./assets/portfolio_img/Aman_Gunjeet/9V4A0331.webp",
+          "alt": "Sarah & Michael - Sunset Photos",
+          "category": "portraits"
+        },
+        {
+          "id": 8,
+          "url": "./assets/portfolio_img/Aman_Gunjeet/9V4A0164.webp",
+          "alt": "Sarah & Michael - Cake Cutting",
+          "category": "reception"
+        },
+        {
+          "id": 9,
+          "url": "./assets/portfolio_img/Aman_Gunjeet/9V4A0112.webp",
+          "alt": "Sarah & Michael - Walking Down Aisle",
+          "category": "ceremony"
+        },
+        {
+          "id": 10,
+          "url": "./assets/portfolio_img/Aman_Gunjeet/9V4A0080.webp",
+          "alt": "Sarah & Michael - Reception Dance",
+          "category": "reception"
+        },
+        {
+          "id": 11,
+          "url": "./assets/portfolio_img/Aman_Gunjeet/9V4A0218.webp",
+          "alt": "Sarah & Michael - Romantic Kiss",
+          "category": "portraits"
+        },
+        {
+          "id": 12,
+          "url": "./assets/portfolio_img/Aman_Gunjeet/9V4A0395.webp",
+          "alt": "Sarah & Michael - Venue Details",
+          "category": "details"
+        },
+        {
+          "id": 13,
+          "url": "./assets/portfolio_img/Aman_Gunjeet/9V4A0380.webp",
+          "alt": "Sarah & Michael - Family Photos",
+          "category": "group"
+        },
+          {
+          "id": 14,
+          "url": "./assets/portfolio_img/Aman_Gunjeet/9V4A0395.webp",
+          "alt": "Sarah & Michael - Family Photos",
+          "category": "group"
+        },
+          {
+          "id": 14,
+          "url": "./assets/portfolio_img/Aman_Gunjeet/9V4A0225.webp",
+          "alt": "Sarah & Michael - Reception Dance",
+          "category": "reception"
+        },
+        {
+          "id": 15,
+          "url": "./assets/portfolio_img/Aman_Gunjeet/9V4A0500.webp",
+          "alt": "Sarah & Michael - Grand Exit",
+          "category": "ceremony"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "coupleName": "Deep & Dolly",
+      "date": "September 22, 2024",
+      "cardImage": "./assets/portfolio_img/Deep_Dolly/Display.webp",
+      "galleryImages": [
+        {
+          "id": 1,
+          "url": "./assets/portfolio_img/Deep_Dolly/9V4A0150.webp",
+          "alt": "Sourabh & Alka - Beach Ceremony",
+          "category": "ceremony"
+        },
+        {
+          "id": 2,
+          "url": "./assets/portfolio_img/Deep_Dolly/9V4A0341.webp",
+          "alt": "Sourabh & Alka - Oceanside Portraits",
+          "category": "portraits"
+        },
+        {
+          "id": 3,
+          "url": "./assets/portfolio_img/Deep_Dolly/9V4A0200.webp",
+          "alt": "Sourabh & Alka - Vow Exchange",
+          "category": "ceremony"
+        },
+        {
+          "id": 4,
+          "url": "./assets/portfolio_img/Deep_Dolly/9V4A0221.webp",
+          "alt": "Sourabh & Alka - Bridal Hair & Makeup",
+          "category": "preparations"
+        },
+        {
+          "id": 5,
+          "url": "./assets/portfolio_img/Deep_Dolly/9V4A0260.webp",
+          "alt": "Sourabh & Alka - Groom Getting Ready",
+          "category": "preparations"
+        },
+        {
+          "id": 6,
+          "url": "./assets/portfolio_img/Deep_Dolly/9V4A0371.webp",
+          "alt": "Sourabh & Alka - Wedding Bouquet",
+          "category": "details"
+        },
+        {
+          "id": 7,
+          "url": "./assets/portfolio_img/Deep_Dolly/9V4A0581.webp",
+          "alt": "Sourabh & Alka - Beach Reception",
+          "category": "reception"
+        },
+        {
+          "id": 8,
+          "url": "./assets/portfolio_img/Deep_Dolly/9V4A0648.webp",
+          "alt": "Emily & James - Sunset Dance",
+          "category": "reception"
+        },
+        {
+          "id": 9,
+          "url": "./assets/portfolio_img/Deep_Dolly/9V4A0648.webp",
+          "alt": "Sourabh & Alka - Wedding Rings",
+          "category": "details"
+        },
+        {
+          "id": 10,
+          "url": "./assets/portfolio_img/Deep_Dolly/9V4A0795.webp",
+          "alt": "Sourabh & Alka - Bridesmaids",
+          "category": "group"
+        },
+        {
+          "id": 11,
+          "url": "./assets/portfolio_img/Deep_Dolly/9V4A0648.webp",
+          "alt": "Sourabh & Alka - Groomsmen",
+          "category": "group"
+        },
+        {
+          "id": 12,
+          "url": "./assets/portfolio_img/Deep_Dolly/9V4A0795.webp",
+          "alt": "Sourabh & Alka - First Look",
+          "category": "portraits"
+        },
+        {
+          "id": 13,
+          "url": "./assets/portfolio_img/Deep_Dolly/9V4A0389.webp",
+          "alt": "Sourabh & Alka - Wedding Toast",
+          "category": "reception"
+        },
+        {
+          "id": 14,
+          "url": "./assets/portfolio_img/Deep_Dolly/9V4A0859.webp",
+          "alt": "Sourabh & Alka - Sparkler Send-off",
+          "category": "ceremony"
+        },
+         {
+          "id": 15,
+          "url": "./assets/portfolio_img/Deep_Dolly/9V4A0878.webp",
+          "alt": "Sourabh & Alka - Sparkler Send-off",
+          "category": "ceremony"
+        },
+         {
+          "id": 16,
+          "url": "./assets/portfolio_img/Deep_Dolly/9V4A0946.webp",
+          "alt": "Sourabh & Alka - Sparkler Send-off",
+          "category": "ceremony"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "coupleName": "Nachiket & Bhavana",
+      "date": "September 22, 2024",
+      "cardImage": "./assets/portfolio_img/Nachiket-Bhavana/display.webp",
+      "galleryImages": [
+        {
+          "id": 1,
+          "url": "./assets/portfolio_img/Nachiket-Bhavana/9V4A3311.webp",
+          "alt": "Sourabh & Alka - Beach Ceremony",
+          "category": "ceremony"
+        },
+        {
+          "id": 2,
+          "url": "./assets/portfolio_img/Nachiket-Bhavana/117A4120.webp",
+          "alt": "Sourabh & Alka - Oceanside Portraits",
+          "category": "portraits"
+        },
+        {
+          "id": 3,
+          "url": "./assets/portfolio_img/Nachiket-Bhavana/117A4106.webp",
+          "alt": "Sourabh & Alka - Vow Exchange",
+          "category": "ceremony"
+        },
+        {
+          "id": 4,
+          "url": "./assets/portfolio_img/Nachiket-Bhavana/117A4116.webp",
+          "alt": "Sourabh & Alka - Bridal Hair & Makeup",
+          "category": "preparations"
+        },
+        {
+          "id": 5,
+          "url": "./assets/portfolio_img/Nachiket-Bhavana/117A4120.webp",
+          "alt": "Sourabh & Alka - Groom Getting Ready",
+          "category": "preparations"
+        },
+        {
+          "id": 6,
+          "url": "./assets/portfolio_img/Nachiket-Bhavana/117A0988.webp",
+          "alt": "Sourabh & Alka - Wedding Bouquet",
+          "category": "details"
+        },
+        {
+          "id": 7,
+          "url": "./assets/portfolio_img/Nachiket-Bhavana/117A4162.webp",
+          "alt": "Sourabh & Alka - Beach Reception",
+          "category": "reception"
+        },
+        {
+          "id": 8,
+          "url": "./assets/portfolio_img/Nachiket-Bhavana/117A4154.webp",
+          "alt": "Emily & James - Sunset Dance",
+          "category": "reception"
+        },
+        {
+          "id": 9,
+          "url": "./assets/portfolio_img/Nachiket-Bhavana/117A9732.webp",
+          "alt": "Sourabh & Alka - Wedding Rings",
+          "category": "details"
+        },
+        {
+          "id": 10,
+          "url": "./assets/portfolio_img/Nachiket-Bhavana/117A9880.webp",
+          "alt": "Sourabh & Alka - Bridesmaids",
+          "category": "group"
+        },
+        {
+          "id": 11,
+          "url": "./assets/portfolio_img/Nachiket-Bhavana/117A9732.webp",
+          "alt": "Sourabh & Alka - Groomsmen",
+          "category": "group"
+        },
+        {
+          "id": 12,
+          "url": "./assets/portfolio_img/Nachiket-Bhavana/117A9417.webp",
+          "alt": "Sourabh & Alka - First Look",
+          "category": "portraits"
+        },
+        {
+          "id": 13,
+          "url": "./assets/portfolio_img/Nachiket-Bhavana/117A8113.webp",
+          "alt": "Sourabh & Alka - Wedding Toast",
+          "category": "reception"
+        },
+        {
+          "id": 14,
+          "url": "./assets/portfolio_img/Nachiket-Bhavana/117A7158.webp",
+          "alt": "Sourabh & Alka - Sparkler Send-off",
+          "category": "ceremony"
+        },
+         {
+          "id": 15,
+          "url": "./assets/portfolio_img/Nachiket-Bhavana/117A1001.webp",
+          "alt": "Sourabh & Alka - Sparkler Send-off",
+          "category": "ceremony"
+        },
+         {
+          "id": 16,
+          "url": "./assets/portfolio_img/Nachiket-Bhavana/117A6651.webp",
+          "alt": "Sourabh & Alka - Sparkler Send-off",
+          "category": "ceremony"
+        }
+      ]
     }
+
   ]
 }

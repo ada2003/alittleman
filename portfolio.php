@@ -382,4 +382,202 @@
     <?php include './contact.php'; ?>
 <?php include './footer.php'; ?>
 </body>
+<script>
+/* Portfolio slider — lightweight, non-invasive.
+   - Uses content.json (same file you already use)
+   - Shows 3 items per slide on desktop, 1 on narrow screens
+   - Auto-slides, pauses on hover
+   - Does not change your CSS; only injects a minimal track/slide layout inline
+*/
+
+(function () {
+  const DESKTOP_ITEMS = 3;
+  const MOBILE_ITEMS = 1;
+  const SLIDE_INTERVAL_MS = 3500;
+
+  // keep style/markup consistent with your PHP output: uppercase title/date formatting
+  function formatDateUpper(dateString) {
+    try {
+      const d = new Date(dateString);
+      const opts = { year: 'numeric', month: 'long', day: 'numeric' };
+      return d.toLocaleDateString('en-US', opts).toUpperCase();
+    } catch (e) {
+      return (dateString || '').toUpperCase();
+    }
+  }
+
+  function createFilmCardFromData(couple, idx) {
+    const card = document.createElement('div');
+    card.className = 'film-card';
+    // keep any animation delay you had before (non-destructive)
+    card.style.animationDelay = `${(idx + 1) * 0.08}s`;
+
+    card.innerHTML = `
+      <div class="film-image-container">
+        <img loading="lazy" src="${couple.cardImage}" alt="${couple.coupleName} Card Image" class="film-image"
+             onerror="this.src='https://images.unsplash.com/photo-1606800052052-a08af7148866?w=400&h=600&fit=crop&crop=faces'">
+        <div class="film-overlay">
+          <a href="portfoliogallery.php?couple_id=${couple.id}" class="view-film-btn">View Film →</a>
+        </div>
+      </div>
+      <div class="film-details">
+        <div class="film-title">${String(couple.coupleName || '').toUpperCase()}</div>
+        <div class="film-date">${formatDateUpper(couple.date)}</div>
+      </div>
+    `;
+    return card;
+  }
+
+  function buildSlider(container, cards) {
+    // clear prior interval if any stored on container
+    if (container._autoSlide) {
+      clearInterval(container._autoSlide);
+      container._autoSlide = null;
+    }
+
+    // determine items per slide by width
+    const itemsPerSlide = window.innerWidth <= 768 ? MOBILE_ITEMS : DESKTOP_ITEMS;
+
+    // if there are <= itemsPerSlide cards, just render them normally (no sliding needed)
+    if (cards.length <= itemsPerSlide) {
+      container.innerHTML = '';
+      const row = document.createElement('div');
+      row.style.display = 'flex';
+      row.style.justifyContent = 'center';
+      row.style.gap = getComputedStyle(document.documentElement).getPropertyValue('--films-gap') || '40px';
+      cards.forEach(c => row.appendChild(c));
+      container.appendChild(row);
+      return;
+    }
+
+    // Build slider track / slides
+    container.innerHTML = '';
+    container.style.overflow = 'hidden';
+    container.style.position = container.style.position || 'relative';
+    container.style.display = 'block'; // ensure parent flex doesn't interfere
+
+    const track = document.createElement('div');
+    track.className = 'films-track';
+    Object.assign(track.style, {
+      display: 'flex',
+      transition: 'transform 600ms ease',
+      willChange: 'transform',
+      padding: '0',
+      margin: '0',
+      boxSizing: 'border-box'
+    });
+
+    const slides = [];
+    for (let i = 0; i < cards.length; i += itemsPerSlide) {
+      const slide = document.createElement('div');
+      slide.className = 'films-slide';
+      Object.assign(slide.style, {
+        boxSizing: 'border-box',
+        display: 'flex',
+        justifyContent: 'center',
+        gap: '40px',
+        padding: '0 10px'
+      });
+
+      const group = cards.slice(i, i + itemsPerSlide);
+      group.forEach(n => slide.appendChild(n));
+      slides.push(slide);
+      track.appendChild(slide);
+    }
+
+    const total = slides.length;
+    // set track width and slides widths so percentage translate works
+    track.style.width = `${total * 100}%`;
+    slides.forEach(s => {
+      s.style.minWidth = `${100 / total}%`;
+      s.style.maxWidth = `${100 / total}%`;
+    });
+
+    container.appendChild(track);
+
+    // auto slide
+    let current = 0;
+    function goTo(idx) {
+      current = idx % total;
+      const shiftPercent = current * (100 / total);
+      track.style.transform = `translateX(-${shiftPercent}%)`;
+    }
+
+    container._autoSlide = setInterval(() => {
+      goTo(current + 1);
+    }, SLIDE_INTERVAL_MS);
+
+    // pause on hover
+    container.addEventListener('mouseenter', () => {
+      if (container._autoSlide) {
+        clearInterval(container._autoSlide);
+        container._autoSlide = null;
+      }
+    });
+    container.addEventListener('mouseleave', () => {
+      if (!container._autoSlide) {
+        container._autoSlide = setInterval(() => goTo(current + 1), SLIDE_INTERVAL_MS);
+      }
+    });
+
+    // allow swipe navigation on touch (simple)
+    let startX = 0;
+    let deltaX = 0;
+    track.addEventListener('touchstart', e => {
+      if (e.touches && e.touches[0]) startX = e.touches[0].clientX;
+    });
+    track.addEventListener('touchmove', e => {
+      if (e.touches && e.touches[0]) {
+        deltaX = e.touches[0].clientX - startX;
+      }
+    });
+    track.addEventListener('touchend', () => {
+      if (Math.abs(deltaX) > 40) {
+        if (deltaX < 0) goTo(current + 1); // swipe left -> next
+        else goTo(current - 1 + total);   // swipe right -> prev
+      }
+      deltaX = 0;
+    });
+
+    // rebuild on resize to recalc itemsPerSlide (debounced)
+    if (container._resizeHandler) window.removeEventListener('resize', container._resizeHandler);
+    container._resizeHandler = () => {
+      clearTimeout(container._resizeTimer);
+      container._resizeTimer = setTimeout(() => {
+        // recreate cards from original data stored on container
+        const origData = container._origData || [];
+        const newCards = origData.map((c, i) => createFilmCardFromData(c, i));
+        buildSlider(container, newCards);
+      }, 220);
+    };
+    window.addEventListener('resize', container._resizeHandler);
+  }
+
+  // Initialize: fetch content.json and build slider, but fall back gracefully.
+  document.addEventListener('DOMContentLoaded', function () {
+    const container = document.querySelector('.films-container');
+    if (!container) return;
+
+    // fetch JSON. If it fails, leave current PHP-rendered content as-is.
+    fetch('content.json').then(r => {
+      if (!r.ok) throw new Error('json fetch failed');
+      return r.json();
+    }).then(json => {
+      const couples = Array.isArray(json.couples) ? json.couples : [];
+      if (couples.length === 0) return; // nothing to do
+
+      // store original data for rebuild on resize
+      container._origData = couples;
+
+      // create film-card nodes from all couples (not only first 3)
+      const cardNodes = couples.map((c, i) => createFilmCardFromData(c, i));
+      buildSlider(container, cardNodes);
+    }).catch(err => {
+      // keep PHP output (three static cards) — just log the error
+      console.warn('Portfolio slider: could not load content.json — keeping server-rendered markup.', err);
+    });
+  });
+})();
+</script>
+
 </html>
