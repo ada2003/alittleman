@@ -383,201 +383,248 @@
 <?php include './footer.php'; ?>
 </body>
 <script>
-/* Portfolio slider — lightweight, non-invasive.
-   - Uses content.json (same file you already use)
-   - Shows 3 items per slide on desktop, 1 on narrow screens
-   - Auto-slides, pauses on hover
-   - Does not change your CSS; only injects a minimal track/slide layout inline
+/* Continuous / smooth slider for the Portfolio section
+   - Shows 3 items per view on desktop, 1 on mobile
+   - Advances 1 card per tick
+   - Seamless loop via cloning first N items
+   - Pause on hover, basic touch swipe, resize-safe
+   - Drop-in replacement: replace existing <script> at the bottom with this
 */
 
 (function () {
-  const DESKTOP_ITEMS = 3;
-  const MOBILE_ITEMS = 1;
-  const SLIDE_INTERVAL_MS = 3500;
+  const DESKTOP_VISIBLE = 3;
+  const MOBILE_VISIBLE = 1;
+  const INTERVAL_MS = 3500;
+  const TRANSITION_MS = 600;
+  const GAP_PX = 40; // keep in sync with CSS gap between cards
 
-  // keep style/markup consistent with your PHP output: uppercase title/date formatting
-  function formatDateUpper(dateString) {
-    try {
-      const d = new Date(dateString);
-      const opts = { year: 'numeric', month: 'long', day: 'numeric' };
-      return d.toLocaleDateString('en-US', opts).toUpperCase();
-    } catch (e) {
-      return (dateString || '').toUpperCase();
-    }
-  }
+  let autoTimer = null;
+  let resizeTimer = null;
 
+  // Make a film-card element from JSON data (keeps same markup as PHP output)
   function createFilmCardFromData(couple, idx) {
     const card = document.createElement('div');
     card.className = 'film-card';
-    // keep any animation delay you had before (non-destructive)
-    card.style.animationDelay = `${(idx + 1) * 0.08}s`;
+    card.style.boxSizing = 'border-box';
+    card.style.flex = '0 0 auto';
+    card.style.margin = '0';
+    card.style.animationDelay = `${(idx + 1) * 0.06}s`;
+
+    const nameUpper = String(couple.coupleName || '').toUpperCase();
+    const dateUpper = safeFormatDate(couple.date);
 
     card.innerHTML = `
       <div class="film-image-container">
-        <img loading="lazy" src="${couple.cardImage}" alt="${couple.coupleName} Card Image" class="film-image"
+        <img loading="lazy" src="${couple.cardImage}" alt="${nameUpper} Card Image" class="film-image"
              onerror="this.src='https://images.unsplash.com/photo-1606800052052-a08af7148866?w=400&h=600&fit=crop&crop=faces'">
         <div class="film-overlay">
           <a href="portfoliogallery.php?couple_id=${couple.id}" class="view-film-btn">View Film →</a>
         </div>
       </div>
       <div class="film-details">
-        <div class="film-title">${String(couple.coupleName || '').toUpperCase()}</div>
-        <div class="film-date">${formatDateUpper(couple.date)}</div>
+        <div class="film-title">${nameUpper}</div>
+        <div class="film-date">${dateUpper}</div>
       </div>
     `;
     return card;
   }
 
-  function buildSlider(container, cards) {
-    // clear prior interval if any stored on container
-    if (container._autoSlide) {
-      clearInterval(container._autoSlide);
-      container._autoSlide = null;
+  function safeFormatDate(d) {
+    try {
+      const date = new Date(d);
+      if (isNaN(date)) return (d || '').toUpperCase();
+      const opts = { year: 'numeric', month: 'long', day: 'numeric' };
+      return date.toLocaleDateString('en-US', opts).toUpperCase();
+    } catch (e) {
+      return (d || '').toUpperCase();
     }
+  }
 
-    // determine items per slide by width
-    const itemsPerSlide = window.innerWidth <= 768 ? MOBILE_ITEMS : DESKTOP_ITEMS;
+  function buildContinuousSlider(container, couplesData) {
+    // cleanup old timers / handlers
+    if (container._cleanup) container._cleanup();
 
-    // if there are <= itemsPerSlide cards, just render them normally (no sliding needed)
-    if (cards.length <= itemsPerSlide) {
+    // determine visible count by viewport
+    const visible = window.innerWidth <= 768 ? MOBILE_VISIBLE : DESKTOP_VISIBLE;
+
+    // create cards (from all couples)
+    const cards = couplesData.map((c, i) => createFilmCardFromData(c, i));
+    const totalReal = cards.length;
+
+    // If not enough cards to slide, render them centered and exit
+    if (totalReal <= visible) {
       container.innerHTML = '';
       const row = document.createElement('div');
       row.style.display = 'flex';
       row.style.justifyContent = 'center';
-      row.style.gap = getComputedStyle(document.documentElement).getPropertyValue('--films-gap') || '40px';
+      row.style.gap = `${GAP_PX}px`;
       cards.forEach(c => row.appendChild(c));
       container.appendChild(row);
       return;
     }
 
-    // Build slider track / slides
+    // Reset container and track
     container.innerHTML = '';
     container.style.overflow = 'hidden';
     container.style.position = container.style.position || 'relative';
-    container.style.display = 'block'; // ensure parent flex doesn't interfere
+    container.style.display = 'block';
 
     const track = document.createElement('div');
     track.className = 'films-track';
     Object.assign(track.style, {
       display: 'flex',
-      transition: 'transform 600ms ease',
+      alignItems: 'stretch',
+      gap: `${GAP_PX}px`,
+      transition: `transform ${TRANSITION_MS}ms ease`,
       willChange: 'transform',
-      padding: '0',
-      margin: '0',
-      boxSizing: 'border-box'
+      boxSizing: 'border-box',
+      padding: '0'
     });
 
-    const slides = [];
-    for (let i = 0; i < cards.length; i += itemsPerSlide) {
-      const slide = document.createElement('div');
-      slide.className = 'films-slide';
-      Object.assign(slide.style, {
-        boxSizing: 'border-box',
-        display: 'flex',
-        justifyContent: 'center',
-        gap: '40px',
-        padding: '0 10px'
-      });
-
-      const group = cards.slice(i, i + itemsPerSlide);
-      group.forEach(n => slide.appendChild(n));
-      slides.push(slide);
-      track.appendChild(slide);
+    // append real cards
+    cards.forEach(c => track.appendChild(c));
+    // clone first N (visible) to the end
+    for (let i = 0; i < visible; i++) {
+      const clone = track.children[i].cloneNode(true);
+      clone.classList.add('clone');
+      track.appendChild(clone);
     }
-
-    const total = slides.length;
-    // set track width and slides widths so percentage translate works
-    track.style.width = `${total * 100}%`;
-    slides.forEach(s => {
-      s.style.minWidth = `${100 / total}%`;
-      s.style.maxWidth = `${100 / total}%`;
-    });
 
     container.appendChild(track);
 
-    // auto slide
-    let current = 0;
-    function goTo(idx) {
-      current = idx % total;
-      const shiftPercent = current * (100 / total);
-      track.style.transform = `translateX(-${shiftPercent}%)`;
+    // state
+    let index = 0; // how many cards we've moved
+    let cardWidth = 0;
+    const totalWithClones = track.children.length; // totalReal + visible
+
+    // sizing function: compute cardWidth so exactly `visible` cards fit the container width
+    function recalc() {
+      const containerWidth = container.clientWidth;
+      // total gaps visible per view = (visible - 1) * GAP_PX
+      const totalGaps = (visible - 1) * GAP_PX;
+      cardWidth = (containerWidth - totalGaps) / visible;
+      // apply width to each card
+      Array.from(track.children).forEach(card => {
+        card.style.flex = `0 0 ${cardWidth}px`;
+      });
+      // jump to current index (no transition) to avoid flicker
+      track.style.transition = 'none';
+      track.style.transform = `translateX(${-index * (cardWidth + GAP_PX)}px)`;
+      // force reflow then restore transition
+      void track.offsetWidth;
+      track.style.transition = `transform ${TRANSITION_MS}ms ease`;
     }
 
-    container._autoSlide = setInterval(() => {
-      goTo(current + 1);
-    }, SLIDE_INTERVAL_MS);
+    // move to next card
+    function moveNext() {
+      index++;
+      track.style.transform = `translateX(${-index * (cardWidth + GAP_PX)}px)`;
+    }
+
+    // transition end: if we've reached clones, reset to corresponding original index
+    track.addEventListener('transitionend', track._transitionHandler = () => {
+      if (index >= totalReal) {
+        // jump back to equivalent original index (index - totalReal)
+        track.style.transition = 'none';
+        index = index - totalReal;
+        track.style.transform = `translateX(${-index * (cardWidth + GAP_PX)}px)`;
+        void track.offsetWidth;
+        track.style.transition = `transform ${TRANSITION_MS}ms ease`;
+      }
+    });
+
+    // auto-play control
+    function startAuto() {
+      if (autoTimer) clearInterval(autoTimer);
+      autoTimer = setInterval(moveNext, INTERVAL_MS);
+    }
+    function stopAuto() {
+      if (autoTimer) {
+        clearInterval(autoTimer);
+        autoTimer = null;
+      }
+    }
 
     // pause on hover
-    container.addEventListener('mouseenter', () => {
-      if (container._autoSlide) {
-        clearInterval(container._autoSlide);
-        container._autoSlide = null;
-      }
-    });
-    container.addEventListener('mouseleave', () => {
-      if (!container._autoSlide) {
-        container._autoSlide = setInterval(() => goTo(current + 1), SLIDE_INTERVAL_MS);
-      }
-    });
+    container.addEventListener('mouseenter', stopAuto);
+    container.addEventListener('mouseleave', startAuto);
 
-    // allow swipe navigation on touch (simple)
-    let startX = 0;
-    let deltaX = 0;
+    // simple touch support
+    let startX = 0, deltaX = 0;
     track.addEventListener('touchstart', e => {
+      stopAuto();
       if (e.touches && e.touches[0]) startX = e.touches[0].clientX;
-    });
+    }, {passive:true});
     track.addEventListener('touchmove', e => {
-      if (e.touches && e.touches[0]) {
-        deltaX = e.touches[0].clientX - startX;
-      }
-    });
+      if (e.touches && e.touches[0]) deltaX = e.touches[0].clientX - startX;
+    }, {passive:true});
     track.addEventListener('touchend', () => {
       if (Math.abs(deltaX) > 40) {
-        if (deltaX < 0) goTo(current + 1); // swipe left -> next
-        else goTo(current - 1 + total);   // swipe right -> prev
+        if (deltaX < 0) moveNext();
+        else {
+          // move prev
+          index = Math.max(0, index - 1);
+          track.style.transform = `translateX(${-index * (cardWidth + GAP_PX)}px)`;
+        }
       }
       deltaX = 0;
+      startAuto();
     });
 
-    // rebuild on resize to recalc itemsPerSlide (debounced)
-    if (container._resizeHandler) window.removeEventListener('resize', container._resizeHandler);
-    container._resizeHandler = () => {
-      clearTimeout(container._resizeTimer);
-      container._resizeTimer = setTimeout(() => {
-        // recreate cards from original data stored on container
-        const origData = container._origData || [];
-        const newCards = origData.map((c, i) => createFilmCardFromData(c, i));
-        buildSlider(container, newCards);
+    // handle resize (debounced) — rebuilds slider to adapt visible count changes
+    function onResize() {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(() => {
+        // rebuild using the original couples data saved on container
+        if (container._origData) {
+          buildContinuousSlider(container, container._origData);
+        } else {
+          // fallback: just recalc sizes
+          recalc();
+        }
       }, 220);
+    }
+    window.addEventListener('resize', onResize);
+
+    // cleanup helper for next rebuild
+    container._cleanup = () => {
+      stopAuto();
+      window.removeEventListener('resize', onResize);
+      track.removeEventListener('transitionend', track._transitionHandler);
+      // remove hover listeners (they are bound to container; recreate on rebuild so ok)
+      container.removeEventListener('mouseenter', stopAuto);
+      container.removeEventListener('mouseleave', startAuto);
+      container._cleanup = null;
     };
-    window.addEventListener('resize', container._resizeHandler);
+
+    // initial sizing & start
+    recalc();
+    startAuto();
   }
 
-  // Initialize: fetch content.json and build slider, but fall back gracefully.
-  document.addEventListener('DOMContentLoaded', function () {
+  // Initialize on DOM load: fetch content.json and build slider
+  document.addEventListener('DOMContentLoaded', () => {
     const container = document.querySelector('.films-container');
     if (!container) return;
 
-    // fetch JSON. If it fails, leave current PHP-rendered content as-is.
     fetch('content.json').then(r => {
       if (!r.ok) throw new Error('json fetch failed');
       return r.json();
     }).then(json => {
       const couples = Array.isArray(json.couples) ? json.couples : [];
-      if (couples.length === 0) return; // nothing to do
+      if (couples.length === 0) return;
 
-      // store original data for rebuild on resize
+      // store original data for rebuilds
       container._origData = couples;
 
-      // create film-card nodes from all couples (not only first 3)
-      const cardNodes = couples.map((c, i) => createFilmCardFromData(c, i));
-      buildSlider(container, cardNodes);
+      buildContinuousSlider(container, couples);
     }).catch(err => {
-      // keep PHP output (three static cards) — just log the error
-      console.warn('Portfolio slider: could not load content.json — keeping server-rendered markup.', err);
+      // If JSON fetch fails, leave server-rendered PHP output (3 static cards) in place
+      console.warn('Portfolio slider: failed loading content.json — keeping server-rendered markup.', err);
     });
   });
 })();
 </script>
+
 
 </html>

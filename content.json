@@ -320,7 +320,7 @@
       "galleryImages": [
         {
           "id": 1,
-          "url": "./assets/portfolio_img/Aman_Gunjeet/9V4A0103.webp",
+          "url": "./assets/portfolio_img/Aman_Gunjeet/9V4A6210.webp",
           "alt": "Sarah & Michael - Wedding Ceremony",
           "category": "ceremony"
         },
@@ -623,7 +623,217 @@
           "category": "ceremony"
         }
       ]
+    },
+    {
+      "id": 7,
+      "coupleName": "Avinash & Kuhu",
+      "date": "September 22, 2024",
+      "cardImage": "./assets/portfolio_img/Avinash-Kuhu/display.webp",
+      "galleryImages": [
+        {
+          "id": 1,
+          "url": "./assets/portfolio_img/Avinash-Kuhu/9V4A8433.webp",
+          "alt": "Sourabh & Alka - Beach Ceremony",
+          "category": "ceremony"
+        },
+        {
+          "id": 2,
+          "url": "./assets/portfolio_img/Avinash-Kuhu/9V4A8461.webp",
+          "alt": "Sourabh & Alka - Oceanside Portraits",
+          "category": "portraits"
+        },
+        {
+          "id": 3,
+          "url": "./assets/portfolio_img/Avinash-Kuhu/9V4A8664.webp",
+          "alt": "Sourabh & Alka - Vow Exchange",
+          "category": "ceremony"
+        },
+        {
+          "id": 4,
+          "url": "./assets/portfolio_img/Avinash-Kuhu/9V4A7938.webp",
+          "alt": "Sourabh & Alka - Bridal Hair & Makeup",
+          "category": "preparations"
+        },
+        {
+          "id": 5,
+          "url": "./assets/portfolio_img/Avinash-Kuhu/9V4A7933.webp",
+          "alt": "Sourabh & Alka - Groom Getting Ready",
+          "category": "preparations"
+        },
+        {
+          "id": 6,
+          "url": "./assets/portfolio_img/Avinash-Kuhu/9V4A7946.webp",
+          "alt": "Sourabh & Alka - Wedding Bouquet",
+          "category": "details"
+        },
+        {
+          "id": 7,
+          "url": "./assets/portfolio_img/Avinash-Kuhu/9V4A7690.webp",
+          "alt": "Sourabh & Alka - Beach Reception",
+          "category": "reception"
+        },
+        {
+          "id": 8,
+          "url": "./assets/portfolio_img/Avinash-Kuhu/9V4A7447.webp",
+          "alt": "Emily & James - Sunset Dance",
+          "category": "reception"
+        },
+        {
+          "id": 9,
+          "url": "./assets/portfolio_img/Avinash-Kuhu/9V4A7684.webp",
+          "alt": "Sourabh & Alka - Wedding Rings",
+          "category": "details"
+        },
+        {
+          "id": 10,
+          "url": "./assets/portfolio_img/Avinash-Kuhu/9V4A7507.webp",
+          "alt": "Sourabh & Alka - Bridesmaids",
+          "category": "group"
+        },
+        {
+          "id": 11,
+          "url": "./assets/portfolio_img/Avinash-Kuhu/9V4A7597.webp",
+          "alt": "Sourabh & Alka - Groomsmen",
+          "category": "group"
+        },
+        {
+          "id": 12,
+          "url": "./assets/portfolio_img/Avinash-Kuhu/9V4A6934.webp",
+          "alt": "Sourabh & Alka - First Look",
+          "category": "portraits"
+        },
+        {
+          "id": 13,
+          "url": "./assets/portfolio_img/Avinash-Kuhu/9V4A6975.webp",
+          "alt": "Sourabh & Alka - Wedding Toast",
+          "category": "reception"
+        },
+        {
+          "id": 14,
+          "url": "./assets/portfolio_img/Avinash-Kuhu/9V4A6899.webp",
+          "alt": "Sourabh & Alka - Sparkler Send-off",
+          "category": "ceremony"
+        },
+         {
+          "id": 15,
+          "url": "./assets/portfolio_img/Avinash-Kuhu/9V4A7100.webp",
+          "alt": "Sourabh & Alka - Sparkler Send-off",
+          "category": "ceremony"
+        },
+         {
+          "id": 16,
+          "url": "./assets/portfolio_img/Avinash-Kuhu/9V4A7191.webp",
+          "alt": "Sourabh & Alka - Sparkler Send-off",
+          "category": "ceremony"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "coupleName": "Nick & Kanika",
+      "date": "September 22, 2024",
+      "cardImage": "./assets/portfolio_img/Nick_Kanika/display.webp",
+      "galleryImages": [
+        {
+          "id": 1,
+          "url": "./assets/portfolio_img/Nick_Kanika/9V4A4413.webp",
+          "alt": "Sourabh & Alka - Beach Ceremony",
+          "category": "ceremony"
+        },
+        {
+          "id": 2,
+          "url": "./assets/portfolio_img/Nick_Kanika/9V4A4442.webp",
+          "alt": "Sourabh & Alka - Oceanside Portraits",
+          "category": "portraits"
+        },
+        {
+          "id": 3,
+          "url": "./assets/portfolio_img/Nick_Kanika/9V4A6272.webp",
+          "alt": "Sourabh & Alka - Vow Exchange",
+          "category": "ceremony"
+        },
+        {
+          "id": 4,
+          "url": "./assets/portfolio_img/Nick_Kanika/9V4A4711.webp",
+          "alt": "Nick & Kanika - Bridal Hair & Makeup",
+          "category": "preparations"
+        },
+        {
+          "id": 5,
+          "url": "./assets/portfolio_img/Nick_Kanika/9V4A4932.webp",
+          "alt": "Nick & Kanika - Groom Getting Ready",
+          "category": "preparations"
+        },
+        {
+          "id": 6,
+          "url": "./assets/portfolio_img/Nick_Kanika/9V4A5677.webp",
+          "alt": "Sourabh & Alka - Wedding Bouquet",
+          "category": "details"
+        },
+        {
+          "id": 7,
+          "url": "./assets/portfolio_img/Nick_Kanika/9V4A5813.webp",
+          "alt": "Sourabh & Alka - Beach Reception",
+          "category": "reception"
+        },
+        {
+          "id": 8,
+          "url": "./assets/portfolio_img/Nick_Kanika/9V4A5964.webp",
+          "alt": "Emily & James - Sunset Dance",
+          "category": "reception"
+        },
+        {
+          "id": 9,
+          "url": "./assets/portfolio_img/Nick_Kanika/9V4A6006.webp",
+          "alt": "Sourabh & Alka - Wedding Rings",
+          "category": "details"
+        },
+        {
+          "id": 10,
+          "url": "./assets/portfolio_img/Nick_Kanika/9V4A6103.webp",
+          "alt": "Sourabh & Alka - Bridesmaids",
+          "category": "group"
+        },
+        {
+          "id": 11,
+          "url": "./assets/portfolio_img/Nick_Kanika/9V4A6144.webp",
+          "alt": "Sourabh & Alka - Groomsmen",
+          "category": "group"
+        },
+        {
+          "id": 12,
+          "url": "./assets/portfolio_img/Nick_Kanika/9V4A6126.webp",
+          "alt": "Sourabh & Alka - First Look",
+          "category": "portraits"
+        },
+        {
+          "id": 13,
+          "url": "./assets/portfolio_img/Nick_Kanika/9V4A6210.webp",
+          "alt": "Sourabh & Alka - Wedding Toast",
+          "category": "reception"
+        },
+        {
+          "id": 14,
+          "url": "./assets/portfolio_img/Nick_Kanika/9V4A6250.webp",
+          "alt": "Sourabh & Alka - Sparkler Send-off",
+          "category": "ceremony"
+        },
+         {
+          "id": 15,
+          "url": "./assets/portfolio_img/Nick_Kanika/9V4A6272.webp",
+          "alt": "Sourabh & Alka - Sparkler Send-off",
+          "category": "ceremony"
+        },
+         {
+          "id": 16,
+          "url": "./assets/portfolio_img/Nick_Kanika/9V4A6638.webp",
+          "alt": "Sourabh & Alka - Sparkler Send-off",
+          "category": "ceremony"
+        }
+      ]
     }
+    
+
 
   ]
 }
