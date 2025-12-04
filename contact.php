@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us Section</title>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&family=Raleway:wght@400;500&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js"></script>
     <style>
         .contact-section {
             background-color: #F9F9F9;
@@ -94,7 +93,6 @@
             transition: background-color 0.3s ease;
         }
         .send-button:hover { background-color: #333; }
-        .send-button:disabled { background-color: #666; cursor: not-allowed; }
         .message {
             padding: 15px;
             margin: 20px 0;
@@ -105,6 +103,19 @@
         }
         .success { background-color: #d4edda; color: #155724; }
         .error { background-color: #f8d7da; color: #721c24; }
+        
+        @media (max-width: 768px) {
+            .contact-container {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            .main-heading {
+                font-size: 48px;
+            }
+            .contact-info {
+                padding-right: 0;
+            }
+        }
     </style>
 </head>
 <body>
@@ -135,54 +146,53 @@
                     <textarea id="message" name="message" class="form-input message-input" placeholder="Write your messages here" required></textarea>
                 </div>
                 
-                <button type="submit" id="send-button" class="send-button">Send it</button>
+                <button type="submit" id="send-button" class="send-button">Send to WhatsApp</button>
             </form>
         </div>
     </section>
 
     <script>
-        // ✅ Initialize EmailJS
-        (function() {
-            emailjs.init("AdAQ99sI799aZJ-x2"); // Replace with your EmailJS Public Key
-        })();
-
-        // ✅ Form Submission
+        // WhatsApp Form Submission
         document.getElementById("contact-form").addEventListener("submit", function(event) {
             event.preventDefault();
 
-            const submitButton = document.getElementById("send-button");
-            const messageContainer = document.getElementById("message-container");
+            const userName = document.getElementById("user_name").value;
+            const userEmail = document.getElementById("user_email").value;
+            const userMessage = document.getElementById("message").value;
 
-            submitButton.disabled = true;
-            submitButton.textContent = "Sending...";
+            // Format the WhatsApp message
+            const whatsappMessage = `*New Contact Form Submission*%0A%0A*Name:* ${encodeURIComponent(userName)}%0A*Email:* ${encodeURIComponent(userEmail)}%0A*Message:* ${encodeURIComponent(userMessage)}`;
 
-            messageContainer.innerHTML = "";
+            // WhatsApp number (replace with your number in international format without + or spaces)
+            const whatsappNumber = "917741975188";
 
-            // Send email via EmailJS
-            emailjs.sendForm("service_tikznal", "template_lgv7ubs", this)
-                .then(function() {
-                    showMessage("✅ Email sent successfully!", "success");
-                    document.getElementById("contact-form").reset();
-                }, function(error) {
-                    console.error("Failed to send email:", error);
-                    showMessage("❌ Failed to send email. Please try again.", "error");
-                })
-                .finally(() => {
-                    submitButton.disabled = false;
-                    submitButton.textContent = "Send it";
-                });
+            // Create WhatsApp URL
+            const whatsappURL = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
+
+            // Open WhatsApp in new tab
+            window.open(whatsappURL, '_blank');
+
+            // Show success message
+            showMessage("✅ Redirecting to WhatsApp...", "success");
+
+            // Reset form after a short delay
+            setTimeout(() => {
+                document.getElementById("contact-form").reset();
+            }, 1000);
         });
 
-        // ✅ Show success/error messages
+        // Show success/error messages
         function showMessage(text, type) {
             const messageContainer = document.getElementById("message-container");
+            messageContainer.innerHTML = "";
+            
             const div = document.createElement("div");
             div.className = `message ${type}`;
             div.textContent = text;
             div.style.display = "block";
             messageContainer.appendChild(div);
 
-            setTimeout(() => { div.style.display = "none"; }, 5000);
+            setTimeout(() => { div.style.display = "none"; }, 3000);
         }
     </script>
 </body>
