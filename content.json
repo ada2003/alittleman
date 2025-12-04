@@ -625,109 +625,109 @@
       ]
     },
     {
-      "id": 7,
-      "coupleName": "Avinash & Kuhu",
-      "date": "September 22, 2024",
-      "cardImage": "./assets/portfolio_img/avinashKuhu/9V4A8338.webp",
-      "galleryImages": [
-        {
-          "id": 1,
-          "url": "./assets/portfolio_img/avinashKuhu/9V4A8433.webp",
-          "alt": "Sourabh & Alka - Beach Ceremony",
-          "category": "ceremony"
-        },
-        {
-          "id": 2,
-          "url": "./assets/portfolio_img/avinashKuhu/9V4A8461.webp",
-          "alt": "Sourabh & Alka - Oceanside Portraits",
-          "category": "portraits"
-        },
-        {
-          "id": 3,
-          "url": "./assets/portfolio_img/avinashKuhu/9V4A8664.webp",
-          "alt": "Sourabh & Alka - Vow Exchange",
-          "category": "ceremony"
-        },
-        {
-          "id": 4,
-          "url": "./assets/portfolio_img/avinashKuhu/9V4A7938.webp",
-          "alt": "Sourabh & Alka - Bridal Hair & Makeup",
-          "category": "preparations"
-        },
-        {
-          "id": 5,
-          "url": "./assets/portfolio_img/avinashKuhu/9V4A7933.webp",
-          "alt": "Sourabh & Alka - Groom Getting Ready",
-          "category": "preparations"
-        },
-        {
-          "id": 6,
-          "url": "./assets/portfolio_img/avinashKuhu/9V4A7946.webp",
-          "alt": "Sourabh & Alka - Wedding Bouquet",
-          "category": "details"
-        },
-        {
-          "id": 7,
-          "url": "./assets/portfolio_img/avinashKuhu/9V4A7690.webp",
-          "alt": "Sourabh & Alka - Beach Reception",
-          "category": "reception"
-        },
-        {
-          "id": 8,
-          "url": "./assets/portfolio_img/avinashKuhu/9V4A7447.webp",
-          "alt": "Emily & James - Sunset Dance",
-          "category": "reception"
-        },
-        {
-          "id": 9,
-          "url": "./assets/portfolio_img/avinashKuhu/9V4A7684.webp",
-          "alt": "Sourabh & Alka - Wedding Rings",
-          "category": "details"
-        },
-        {
-          "id": 10,
-          "url": "./assets/portfolio_img/avinashKuhu/9V4A7507.webp",
-          "alt": "Sourabh & Alka - Bridesmaids",
-          "category": "group"
-        },
-        {
-          "id": 11,
-          "url": "./assets/portfolio_img/avinashKuhu/9V4A7597.webp",
-          "alt": "Sourabh & Alka - Groomsmen",
-          "category": "group"
-        },
-        {
-          "id": 12,
-          "url": "./assets/portfolio_img/avinashKuhu/9V4A6934.webp",
-          "alt": "Sourabh & Alka - First Look",
-          "category": "portraits"
-        },
-        {
-          "id": 13,
-          "url": "./assets/portfolio_img/avinashKuhu/9V4A6975.webp",
-          "alt": "Sourabh & Alka - Wedding Toast",
-          "category": "reception"
-        },
-        {
-          "id": 14,
-          "url": "./assets/portfolio_img/avinashKuhu/9V4A6899.webp",
-          "alt": "Sourabh & Alka - Sparkler Send-off",
-          "category": "ceremony"
-        },
-         {
-          "id": 15,
-          "url": "./assets/portfolio_img/avinashKuhu/9V4A7100.webp",
-          "alt": "Sourabh & Alka - Sparkler Send-off",
-          "category": "ceremony"
-        },
-         {
-          "id": 16,
-          "url": "./assets/portfolio_img/avinashKuhu/9V4A7191.webp",
-          "alt": "Sourabh & Alka - Sparkler Send-off",
-          "category": "ceremony"
-        }
-      ]
+  "id": 7,
+  "coupleName": "Avinash & Kuhu",
+  "date": "September 22, 2024",
+  "cardImage": "./assets/portfolio_img/avinashKuhu/9V4A8338.webp",
+  "galleryImages": [
+    {
+      "id": 1,
+      "url": "./assets/portfolio_img/avinashKuhu/9V4A8433.webp",
+      "alt": "Avinash & Kuhu - Beach Ceremony",
+      "category": "ceremony"
     },
+    {
+      "id": 2,
+      "url": "./assets/portfolio_img/avinashKuhu/9V4A8461.webp",
+      "alt": "Avinash & Kuhu - Oceanside Portraits",
+      "category": "portraits"
+    },
+    {
+      "id": 3,
+      "url": "./assets/portfolio_img/avinashKuhu/9V4A8664.webp",
+      "alt": "Avinash & Kuhu - Vow Exchange",
+      "category": "ceremony"
+    },
+    {
+      "id": 4,
+      "url": "./assets/portfolio_img/avinashKuhu/9V4A7938.webp",
+      "alt": "Avinash & Kuhu - Bridal Hair & Makeup",
+      "category": "preparations"
+    },
+    {
+      "id": 5,
+      "url": "./assets/portfolio_img/avinashKuhu/9V4A7933.webp",
+      "alt": "Avinash & Kuhu - Groom Getting Ready",
+      "category": "preparations"
+    },
+    {
+      "id": 6,
+      "url": "./assets/portfolio_img/avinashKuhu/9V4A7946.webp",
+      "alt": "Avinash & Kuhu - Wedding Bouquet",
+      "category": "details"
+    },
+    {
+      "id": 7,
+      "url": "./assets/portfolio_img/avinashKuhu/9V4A7690.webp",
+      "alt": "Avinash & Kuhu - Beach Reception",
+      "category": "reception"
+    },
+    {
+      "id": 8,
+      "url": "./assets/portfolio_img/avinashKuhu/9V4A7447.webp",
+      "alt": "Avinash & Kuhu - Sunset Dance",
+      "category": "reception"
+    },
+    {
+      "id": 9,
+      "url": "./assets/portfolio_img/avinashKuhu/9V4A7684.webp",
+      "alt": "Avinash & Kuhu - Wedding Rings",
+      "category": "details"
+    },
+    {
+      "id": 10,
+      "url": "./assets/portfolio_img/avinashKuhu/9V4A7507.webp",
+      "alt": "Avinash & Kuhu - Bridesmaids",
+      "category": "group"
+    },
+    {
+      "id": 11,
+      "url": "./assets/portfolio_img/avinashKuhu/9V4A7597.webp",
+      "alt": "Avinash & Kuhu - Groomsmen",
+      "category": "group"
+    },
+    {
+      "id": 12,
+      "url": "./assets/portfolio_img/avinashKuhu/9V4A6934.webp",
+      "alt": "Avinash & Kuhu - First Look",
+      "category": "portraits"
+    },
+    {
+      "id": 13,
+      "url": "./assets/portfolio_img/avinashKuhu/9V4A6975.webp",
+      "alt": "Avinash & Kuhu - Wedding Toast",
+      "category": "reception"
+    },
+    {
+      "id": 14,
+      "url": "./assets/portfolio_img/avinashKuhu/9V4A6899.webp",
+      "alt": "Avinash & Kuhu - Sparkler Send-off",
+      "category": "ceremony"
+    },
+    {
+      "id": 15,
+      "url": "./assets/portfolio_img/avinashKuhu/9V4A7100.webp",
+      "alt": "Avinash & Kuhu - Sparkler Send-off",
+      "category": "ceremony"
+    },
+    {
+      "id": 16,
+      "url": "./assets/portfolio_img/avinashKuhu/9V4A7191.webp",
+      "alt": "Avinash & Kuhu - Sparkler Send-off",
+      "category": "ceremony"
+    }
+  ]
+},
     {
       "id": 8,
       "coupleName": "Nick & Kanika",
