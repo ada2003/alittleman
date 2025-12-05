@@ -4,101 +4,101 @@
       "id": 1,
       "coupleName": "shaheen & kuldeep",
       "date": "June 15, 2024",
-      "cardImage": "./assets/portfolio_img/couple_01/cardimage1.jpg",
+      "cardImage": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764947678/cardimage1_u8yxw1.jpg",
       "galleryImages": [
         {
           "id": 1,
-          "url": "./assets/portfolio_img/couple_01/i1.jpg",
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764947679/i1_bcyvxq.jpg",
           "alt": "Sarah & Michael - Wedding Ceremony",
           "category": "ceremony"
         },
         {
           "id": 2,
-          "url": "./assets/portfolio_img/couple_01/i2.jpg",
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764947680/i2_zbin8q.jpg",
           "alt": "Sarah & Michael - First Dance",
           "category": "reception"
         },
         {
           "id": 3,
-          "url": "./assets/portfolio_img/couple_01/i3.jpg",
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764947679/i3_dvayob.jpg",
           "alt": "Sarah & Michael - Couple Portrait",
           "category": "portraits"
         },
         {
           "id": 4,
-          "url": "./assets/portfolio_img/couple_01/i4.jpg",
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764947680/i4_wikf3n.jpg",
           "alt": "Sarah & Michael - Ring Exchange",
           "category": "ceremony"
         },
         {
           "id": 5,
-          "url": "./assets/portfolio_img/couple_01/i5.jpg",
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764947680/i5_mxzz9o.jpg",
           "alt": "Sarah & Michael - Bridal Preparations",
           "category": "preparations"
         },
         {
           "id": 6,
-          "url": "./assets/portfolio_img/couple_01/i6.jpg",
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764947680/i6_x2u1qb.jpg",
           "alt": "Sarah & Michael - Wedding Party",
           "category": "group"
         },
         {
           "id": 7,
-          "url": "./assets/portfolio_img/couple_01/i7.jpg",
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764947683/i7_m5mbrr.jpg",
           "alt": "Sarah & Michael - Sunset Photos",
           "category": "portraits"
         },
         {
           "id": 8,
-          "url": "./assets/portfolio_img/couple_01/i8.jpg",
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764947685/i8_pva9nu.jpg",
           "alt": "Sarah & Michael - Cake Cutting",
           "category": "reception"
         },
         {
           "id": 9,
-          "url": "./assets/portfolio_img/couple_01/i9.jpg",
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764947686/i9_urrtxp.jpg",
           "alt": "Sarah & Michael - Walking Down Aisle",
           "category": "ceremony"
         },
         {
           "id": 10,
-          "url": "./assets/portfolio_img/couple_01/i10.jpg",
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764947688/i10_iuulzk.jpg",
           "alt": "Sarah & Michael - Reception Dance",
           "category": "reception"
         },
         {
           "id": 11,
-          "url": "./assets/portfolio_img/couple_01/i11.jpg",
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764947690/i11_brdeuu.jpg",
           "alt": "Sarah & Michael - Romantic Kiss",
           "category": "portraits"
         },
         {
           "id": 12,
-          "url": "./assets/portfolio_img/couple_01/i12.jpg",
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764947693/i12_ig4isa.jpg",
           "alt": "Sarah & Michael - Venue Details",
           "category": "details"
         },
         {
           "id": 13,
-          "url": "./assets/portfolio_img/couple_01/i13.jpg",
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764947694/i13_g8imuc.jpg",
           "alt": "Sarah & Michael - Family Photos",
           "category": "group"
         },
           {
           "id": 14,
-          "url": "./assets/portfolio_img/couple_01/cardimage1.jpg",
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764947696/i14_f2jgjs.jpg",
           "alt": "Sarah & Michael - Family Photos",
           "category": "group"
         },
           {
           "id": 14,
-          "url": "./assets/portfolio_img/couple_01/i10.jpg",
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764947696/i14_f2jgjs.jpg",
           "alt": "Sarah & Michael - Reception Dance",
           "category": "reception"
         },
         {
           "id": 15,
-          "url": "./assets/portfolio_img/couple_01/i14.jpg",
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764947698/i15_gv9rgm.jpg",
           "alt": "Sarah & Michael - Grand Exit",
           "category": "ceremony"
         }
@@ -108,101 +108,101 @@
       "id": 2,
       "coupleName": "Sourabh & Alka",
       "date": "September 22, 2024",
-      "cardImage": "./assets/portfolio_img/sourabh_alka/cardimage1.jpg",
+      "cardImage": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764948334/cardimage1_demkf3.jpg",
       "galleryImages": [
         {
           "id": 1,
-          "url": "./assets/portfolio_img/sourabh_alka/i1.jpg",
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764948336/i1_s1yzfu.jpg",
           "alt": "Sourabh & Alka - Beach Ceremony",
           "category": "ceremony"
         },
         {
           "id": 2,
-          "url": "./assets/portfolio_img/sourabh_alka/i2.jpg",
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764948338/i2_fljwgk.jpg",
           "alt": "Sourabh & Alka - Oceanside Portraits",
           "category": "portraits"
         },
         {
           "id": 3,
-          "url": "./assets/portfolio_img/sourabh_alka/i3.jpg",
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764948341/i3_alnkw3.jpg",
           "alt": "Sourabh & Alka - Vow Exchange",
           "category": "ceremony"
         },
         {
           "id": 4,
-          "url": "./assets/portfolio_img/sourabh_alka/i4.jpg",
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764948343/i4_xu7rbb.jpg",
           "alt": "Sourabh & Alka - Bridal Hair & Makeup",
           "category": "preparations"
         },
         {
           "id": 5,
-          "url": "./assets/portfolio_img/sourabh_alka/i5.jpg",
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764948346/i5_cohxvt.jpg",
           "alt": "Sourabh & Alka - Groom Getting Ready",
           "category": "preparations"
         },
         {
           "id": 6,
-          "url": "./assets/portfolio_img/sourabh_alka/i6.jpg",
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764948347/i6_nhmkbl.jpg",
           "alt": "Sourabh & Alka - Wedding Bouquet",
           "category": "details"
         },
         {
           "id": 7,
-          "url": "./assets/portfolio_img/sourabh_alka/i7.jpg",
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764948350/i7_xlmv9q.jpg",
           "alt": "Sourabh & Alka - Beach Reception",
           "category": "reception"
         },
         {
           "id": 8,
-          "url": "./assets/portfolio_img/sourabh_alka/i8.jpg",
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764948323/i8_xktsxd.jpg",
           "alt": "Emily & James - Sunset Dance",
           "category": "reception"
         },
         {
           "id": 9,
-          "url": "./assets/portfolio_img/sourabh_alka/i9.jpg",
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764948324/i9_x98nzl.jpg",
           "alt": "Sourabh & Alka - Wedding Rings",
           "category": "details"
         },
         {
           "id": 10,
-          "url": "./assets/portfolio_img/sourabh_alka/i10.jpg",
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764948325/i10_t4ltmy.jpg",
           "alt": "Sourabh & Alka - Bridesmaids",
           "category": "group"
         },
         {
           "id": 11,
-          "url": "./assets/portfolio_img/sourabh_alka/i11.jpg",
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764948327/i11_ypxryw.jpg",
           "alt": "Sourabh & Alka - Groomsmen",
           "category": "group"
         },
         {
           "id": 12,
-          "url": "./assets/portfolio_img/sourabh_alka/i12.jpg",
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764948329/i12_a2vv4a.jpg",
           "alt": "Sourabh & Alka - First Look",
           "category": "portraits"
         },
         {
           "id": 13,
-          "url": "./assets/portfolio_img/sourabh_alka/i13.jpg",
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764948330/i13_egw061.jpg",
           "alt": "Sourabh & Alka - Wedding Toast",
           "category": "reception"
         },
         {
           "id": 14,
-          "url": "./assets/portfolio_img/sourabh_alka/i14.jpg",
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764948332/i14_eboilg.jpg",
           "alt": "Sourabh & Alka - Sparkler Send-off",
           "category": "ceremony"
         },
          {
           "id": 15,
-          "url": "./assets/portfolio_img/sourabh_alka/i8.jpg",
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764948323/i8_xktsxd.jpg",
           "alt": "Sourabh & Alka - Sparkler Send-off",
           "category": "ceremony"
         },
          {
           "id": 16,
-          "url": "./assets/portfolio_img/sourabh_alka/cardimage1.jpg",
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764948334/cardimage1_demkf3.jpg",
           "alt": "Sourabh & Alka - Sparkler Send-off",
           "category": "ceremony"
         }
@@ -212,83 +212,83 @@
       "id": 3,
       "coupleName": "Tanya & Shreyas",
       "date": "November 8, 2024",
-      "cardImage": "./assets/portfolio_img/tanya&shreyas/cardimage1.jpg",
+      "cardImage": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764949243/cardimage1_c1ovb8.jpg",
       "galleryImages": [
         {
           "id": 1,
-          "image": "./assets/portfolio_img/tanya&shreyas/i1.jpg",
+          "image": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764949245/i1_h0f0yf.jpg",
           "alt": "Tanya & Shreyas - Hindu Ceremony",
           "category": "ceremony"
         },
         {
           "id": 2,
-          "image": "./assets/portfolio_img/tanya&shreyas/i2.jpg",
+          "image": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764949247/i2_mhltif.jpg",
           "alt": "Tanya & Shreyas - Mandap Decor",
           "category": "details"
         },
         {
           "id": 3,
-          "image": "./assets/portfolio_img/tanya&shreyas/i3.jpg",
+          "image": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764949238/i13_rhljef.jpg",
           "alt": "Tanya & Shreyas - Mehendi Ceremony",
           "category": "ceremony"
         },
         {
           "id": 4,
-          "image": "./assets/portfolio_img/tanya&shreyas/i4.jpg",
+          "image": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764949240/14_izbfqz.jpg",
           "alt": "Tanya & Shreyas - Baraat Arrival",
           "category": "ceremony"
         },
         {
           "id": 5,
-          "image": "./assets/portfolio_img/tanya&shreyas/i5.jpg",
+          "image": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764949222/i5_iuqszd.jpg",
           "alt": "Tanya & Shreyas - Bridal Lehenga Details",
           "category": "preparations"
         },
         {
           "id": 6,
-          "image": "./assets/portfolio_img/tanya&shreyas/i6.jpg",
+          "image": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764949224/i6_eol6ss.jpg",
           "alt": "Tanya & Shreyas - Haldi Ceremony",
           "category": "ceremony"
         },
         {
           "id": 7,
-          "image": "./assets/portfolio_img/tanya&shreyas/i7.jpg",
+          "image": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764949226/i7_ohfs1b.jpg",
           "alt": "Tanya & Shreyas - Saptapadi",
           "category": "ceremony"
         },
         {
           "id": 8,
-          "image": "./assets/portfolio_img/tanya&shreyas/i8.jpg",
+          "image": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764949228/i8_nseltq.jpg",
           "alt": "Tanya & Shreyas - Traditional Jewelry",
           "category": "details"
         },
         {
           "id": 9,
-          "image": "./assets/portfolio_img/tanya&shreyas/i9.jpg",
+          "image": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764949230/i9_yigrfj.jpg",
           "alt": "Tanya & Shreyas - Family Portraits",
           "category": "group"
         },
         {
           "id": 10,
-          "image": "./assets/portfolio_img/tanya&shreyas/i10.jpg",
+          "image": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764949232/i10_ldvgjh.jpg",
           "alt": "Tanya & Shreyas - Reception Dance",
           "category": "reception"
         },
         {
           "id": 11,
-          "image": "./assets/portfolio_img/tanya&shreyas/i11.jpg",
+          "image": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764949234/i11_ge8jrd.jpg",
           "alt": "Tanya & Shreyas - Couple Portraits",
           "category": "portraits"
         },
         {
           "id": 12,
-          "image": "./assets/portfolio_img/tanya&shreyas/i12.jpg",
+          "image": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764949236/i12_nok8s0.jpg",
           "alt": "Tanya & Shreyas - Wedding Feast",
           "category": "reception"
         },
         {
           "id": 13,
-          "image": "./assets/portfolio_img/tanya&shreyas/i13.jpg",
+          "image": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764949220/i3_rckrrs.jpg",
           "alt": "Tanya & Shreyas - Sindoor Ceremony",
           "category": "ceremony"
         },
@@ -300,13 +300,13 @@
         },
          {
           "id": 14,
-          "image": "./assets/portfolio_img/tanya&shreyas/cardimage1.jpg",
+          "image": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764949243/cardimage1_c1ovb8.jpg",
           "alt": "Tanya & Shreyas - Sindoor Ceremony",
           "category": "ceremony"
         },
         {
           "id": 15,
-          "image": "./assets/portfolio_img/tanya&shreyas/14.jpg",
+          "image": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764949240/14_izbfqz.jpg",
           "alt": "Tanya & Shreyas - Vidaai",
           "category": "ceremony"
         }
@@ -316,65 +316,65 @@
       "id": 4,
       "coupleName": "Aman & Gunjeet",
       "date": "June 15, 2024",
-      "cardImage": "./assets/portfolio_img/Aman_Gunjeet/display.webp",
+      "cardImage": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764950037/9V4A9370_z8euib.jpg",
       "galleryImages": [
         {
           "id": 1,
-          "url": "./assets/portfolio_img/Aman_Gunjeet/9V4A6210.webp",
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764950161/9V4A0080_ndbjfi.jpg",
           "alt": "Sarah & Michael - Wedding Ceremony",
           "category": "ceremony"
         },
         {
           "id": 2,
-          "url": "./assets/portfolio_img/Aman_Gunjeet/9V4A0191.webp",
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764950156/117A9611_bsndog.jpg",
           "alt": "Sarah & Michael - First Dance",
           "category": "reception"
         },
         {
           "id": 3,
-          "url": "./assets/portfolio_img/Aman_Gunjeet/9V4A0206.webp",
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764950147/117A9314_bigt93.jpg",
           "alt": "Sarah & Michael - Couple Portrait",
           "category": "portraits"
         },
         {
           "id": 4,
-          "url": "./assets/portfolio_img/Aman_Gunjeet/9V4A0212.webp",
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764950133/117A9254_d9ww1s.jpg",
           "alt": "Sarah & Michael - Ring Exchange",
           "category": "ceremony"
         },
         {
           "id": 5,
-          "url": "./assets/portfolio_img/Aman_Gunjeet/9V4A0225.webp",
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764950119/117A9080_wclxqf.jpg",
           "alt": "Sarah & Michael - Bridal Preparations",
           "category": "preparations"
         },
         {
           "id": 6,
-          "url": "./assets/portfolio_img/Aman_Gunjeet/9V4A0218.webp",
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764950109/9V4A9974_oi0fcq.jpg",
           "alt": "Sarah & Michael - Wedding Party",
           "category": "group"
         },
         {
           "id": 7,
-          "url": "./assets/portfolio_img/Aman_Gunjeet/9V4A0331.webp",
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764950078/9V4A9780_ww1agw.jpg",
           "alt": "Sarah & Michael - Sunset Photos",
           "category": "portraits"
         },
         {
           "id": 8,
-          "url": "./assets/portfolio_img/Aman_Gunjeet/9V4A0164.webp",
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764950035/9V4A0854_mkabio.jpg",
           "alt": "Sarah & Michael - Cake Cutting",
           "category": "reception"
         },
         {
           "id": 9,
-          "url": "./assets/portfolio_img/Aman_Gunjeet/9V4A0112.webp",
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764950022/9V4A0805_ojpk3u.jpg",
           "alt": "Sarah & Michael - Walking Down Aisle",
           "category": "ceremony"
         },
         {
           "id": 10,
-          "url": "./assets/portfolio_img/Aman_Gunjeet/9V4A0080.webp",
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764950005/display_t46xlf.jpg",
           "alt": "Sarah & Michael - Reception Dance",
           "category": "reception"
         },
@@ -386,7 +386,7 @@
         },
         {
           "id": 12,
-          "url": "./assets/portfolio_img/Aman_Gunjeet/9V4A0395.webp",
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764950003/117A9782_g9nyav.jpg",
           "alt": "Sarah & Michael - Venue Details",
           "category": "details"
         },
@@ -398,19 +398,19 @@
         },
           {
           "id": 14,
-          "url": "./assets/portfolio_img/Aman_Gunjeet/9V4A0395.webp",
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764950000/117A9681_tycrqe.jpg",
           "alt": "Sarah & Michael - Family Photos",
           "category": "group"
         },
           {
           "id": 14,
-          "url": "./assets/portfolio_img/Aman_Gunjeet/9V4A0225.webp",
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764950017/9V4A0638_hrnnkx.jpg",
           "alt": "Sarah & Michael - Reception Dance",
           "category": "reception"
         },
         {
           "id": 15,
-          "url": "./assets/portfolio_img/Aman_Gunjeet/9V4A0500.webp",
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764950058/9V4A9477_xezkcj.jpg",
           "alt": "Sarah & Michael - Grand Exit",
           "category": "ceremony"
         }
@@ -420,101 +420,101 @@
       "id": 5,
       "coupleName": "Deep & Dolly",
       "date": "September 22, 2024",
-      "cardImage": "./assets/portfolio_img/Deep_Dolly/Display.webp",
+      "cardImage": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764952761/9V4A0157_okj9uq.jpg",
       "galleryImages": [
         {
           "id": 1,
-          "url": "./assets/portfolio_img/Deep_Dolly/9V4A0150.webp",
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764952732/9V4A0390_1_b1w9e0.jpg",
           "alt": "Sourabh & Alka - Beach Ceremony",
           "category": "ceremony"
         },
         {
           "id": 2,
-          "url": "./assets/portfolio_img/Deep_Dolly/9V4A0341.webp",
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764952719/Display_pkwyud.jpg",
           "alt": "Sourabh & Alka - Oceanside Portraits",
           "category": "portraits"
         },
         {
           "id": 3,
-          "url": "./assets/portfolio_img/Deep_Dolly/9V4A0200.webp",
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764952791/9V4A1036_h2atc5.jpg",
           "alt": "Sourabh & Alka - Vow Exchange",
           "category": "ceremony"
         },
         {
           "id": 4,
-          "url": "./assets/portfolio_img/Deep_Dolly/9V4A0221.webp",
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764952714/9V4A3484_az9lgm.jpg",
           "alt": "Sourabh & Alka - Bridal Hair & Makeup",
           "category": "preparations"
         },
         {
           "id": 5,
-          "url": "./assets/portfolio_img/Deep_Dolly/9V4A0260.webp",
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764952752/9V4A0878_1_hpasfx.jpg",
           "alt": "Sourabh & Alka - Groom Getting Ready",
           "category": "preparations"
         },
         {
           "id": 6,
-          "url": "./assets/portfolio_img/Deep_Dolly/9V4A0371.webp",
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764952822/9V4A3449_wvtan2.jpg",
           "alt": "Sourabh & Alka - Wedding Bouquet",
           "category": "details"
         },
         {
           "id": 7,
-          "url": "./assets/portfolio_img/Deep_Dolly/9V4A0581.webp",
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764952822/9V4A3449_wvtan2.jpg",
           "alt": "Sourabh & Alka - Beach Reception",
           "category": "reception"
         },
         {
           "id": 8,
-          "url": "./assets/portfolio_img/Deep_Dolly/9V4A0648.webp",
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764952810/9V4A1163_glgsyt.jpg",
           "alt": "Emily & James - Sunset Dance",
           "category": "reception"
         },
         {
           "id": 9,
-          "url": "./assets/portfolio_img/Deep_Dolly/9V4A0648.webp",
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764952806/9V4A1147_vqmrgu.jpg",
           "alt": "Sourabh & Alka - Wedding Rings",
           "category": "details"
         },
         {
           "id": 10,
-          "url": "./assets/portfolio_img/Deep_Dolly/9V4A0795.webp",
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764952810/9V4A1163_glgsyt.jpg",
           "alt": "Sourabh & Alka - Bridesmaids",
           "category": "group"
         },
         {
           "id": 11,
-          "url": "./assets/portfolio_img/Deep_Dolly/9V4A0648.webp",
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764952788/9V4A1021_irpqpi.jpg",
           "alt": "Sourabh & Alka - Groomsmen",
           "category": "group"
         },
         {
           "id": 12,
-          "url": "./assets/portfolio_img/Deep_Dolly/9V4A0795.webp",
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764952785/9V4A0951_e1ff9s.jpg",
           "alt": "Sourabh & Alka - First Look",
           "category": "portraits"
         },
         {
           "id": 13,
-          "url": "./assets/portfolio_img/Deep_Dolly/9V4A0389.webp",
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764952770/9V4A0260_ibwph5.jpg",
           "alt": "Sourabh & Alka - Wedding Toast",
           "category": "reception"
         },
         {
           "id": 14,
-          "url": "./assets/portfolio_img/Deep_Dolly/9V4A0859.webp",
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764952744/9V4A0859_y8s4sc.jpg",
           "alt": "Sourabh & Alka - Sparkler Send-off",
           "category": "ceremony"
         },
          {
           "id": 15,
-          "url": "./assets/portfolio_img/Deep_Dolly/9V4A0878.webp",
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764952716/9V4A3513_rb3xsf.jpg",
           "alt": "Sourabh & Alka - Sparkler Send-off",
           "category": "ceremony"
         },
          {
           "id": 16,
-          "url": "./assets/portfolio_img/Deep_Dolly/9V4A0946.webp",
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764952716/9V4A3513_rb3xsf.jpg",
           "alt": "Sourabh & Alka - Sparkler Send-off",
           "category": "ceremony"
         }
@@ -524,59 +524,59 @@
       "id": 6,
       "coupleName": "Nachiket & Bhavana",
       "date": "September 22, 2024",
-      "cardImage": "./assets/portfolio_img/Nachiket-Bhavana/display.webp",
+      "cardImage": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764953863/117A1001_psg1nt.webp",
       "galleryImages": [
         {
           "id": 1,
-          "url": "./assets/portfolio_img/Nachiket-Bhavana/9V4A3311.webp",
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764953841/9V4A4854_iy8lth.webp",
           "alt": "Sourabh & Alka - Beach Ceremony",
           "category": "ceremony"
         },
         {
           "id": 2,
-          "url": "./assets/portfolio_img/Nachiket-Bhavana/117A4120.webp",
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764953768/117A4328_axsiqe.webp",
           "alt": "Sourabh & Alka - Oceanside Portraits",
           "category": "portraits"
         },
         {
           "id": 3,
-          "url": "./assets/portfolio_img/Nachiket-Bhavana/117A4106.webp",
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764953761/117A4225_rii63d.webp",
           "alt": "Sourabh & Alka - Vow Exchange",
           "category": "ceremony"
         },
         {
           "id": 4,
-          "url": "./assets/portfolio_img/Nachiket-Bhavana/117A4116.webp",
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764953736/9V4A5539_nhklaf.webp",
           "alt": "Sourabh & Alka - Bridal Hair & Makeup",
           "category": "preparations"
         },
         {
           "id": 5,
-          "url": "./assets/portfolio_img/Nachiket-Bhavana/117A4120.webp",
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764953728/9V4A5990_hikos7.webp",
           "alt": "Sourabh & Alka - Groom Getting Ready",
           "category": "preparations"
         },
         {
           "id": 6,
-          "url": "./assets/portfolio_img/Nachiket-Bhavana/117A0988.webp",
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764952825/9V4A3459_qq7xd3.jpg",
           "alt": "Sourabh & Alka - Wedding Bouquet",
           "category": "details"
         },
         {
           "id": 7,
-          "url": "./assets/portfolio_img/Nachiket-Bhavana/117A4162.webp",
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764953719/9V4A3991_rju1pm.webp",
           "alt": "Sourabh & Alka - Beach Reception",
           "category": "reception"
         },
         {
           "id": 8,
-          "url": "./assets/portfolio_img/Nachiket-Bhavana/117A4154.webp",
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764953711/117A9732_o1jgij.webp",
           "alt": "Emily & James - Sunset Dance",
           "category": "reception"
         },
         {
           "id": 9,
-          "url": "./assets/portfolio_img/Nachiket-Bhavana/117A9732.webp",
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764953765/9V4A4547_qrilst.webp",
           "alt": "Sourabh & Alka - Wedding Rings",
           "category": "details"
         },
@@ -588,37 +588,37 @@
         },
         {
           "id": 11,
-          "url": "./assets/portfolio_img/Nachiket-Bhavana/117A9732.webp",
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764953781/9V4A4206_ruh7ib.webp",
           "alt": "Sourabh & Alka - Groomsmen",
           "category": "group"
         },
         {
           "id": 12,
-          "url": "./assets/portfolio_img/Nachiket-Bhavana/117A9417.webp",
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764953784/117A9572_l0dpc7.webp",
           "alt": "Sourabh & Alka - First Look",
           "category": "portraits"
         },
         {
           "id": 13,
-          "url": "./assets/portfolio_img/Nachiket-Bhavana/117A8113.webp",
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764953746/117A4089_obfmhi.webp",
           "alt": "Sourabh & Alka - Wedding Toast",
           "category": "reception"
         },
         {
           "id": 14,
-          "url": "./assets/portfolio_img/Nachiket-Bhavana/117A7158.webp",
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764953736/9V4A5539_nhklaf.webp",
           "alt": "Sourabh & Alka - Sparkler Send-off",
           "category": "ceremony"
         },
          {
           "id": 15,
-          "url": "./assets/portfolio_img/Nachiket-Bhavana/117A1001.webp",
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764953714/117A9121_golm0k.webp",
           "alt": "Sourabh & Alka - Sparkler Send-off",
           "category": "ceremony"
         },
          {
           "id": 16,
-          "url": "./assets/portfolio_img/Nachiket-Bhavana/117A6651.webp",
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764953787/9V4A5165_f48wdc.webp",
           "alt": "Sourabh & Alka - Sparkler Send-off",
           "category": "ceremony"
         }
@@ -628,101 +628,101 @@
   "id": 7,
   "coupleName": "Avinash & Kuhu",
   "date": "September 22, 2024",
-  "cardImage": "./assets/portfolio_img/avinashuhu/9V4A8338.webp",
+  "cardImage": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764954921/display_ebymas.jpg",
   "galleryImages": [
     {
       "id": 1,
-      "url": "./assets/portfolio_img/avinashuhu/9V4A8433.webp",
+      "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764954921/9V4A7680_gcmbv8.jpg",
       "alt": "Avinash & Kuhu - Beach Ceremony",
       "category": "ceremony"
     },
     {
       "id": 2,
-      "url": "./assets/portfolio_img/avinashuhu/9V4A8461.webp",
+      "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764954921/9V4A8683_o3b8y2.jpg",
       "alt": "Avinash & Kuhu - Oceanside Portraits",
       "category": "portraits"
     },
     {
       "id": 3,
-      "url": "./assets/portfolio_img/avinashuhu/9V4A8664.webp",
+      "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764954921/9V4A8602_a9en10.jpg",
       "alt": "Avinash & Kuhu - Vow Exchange",
       "category": "ceremony"
     },
     {
       "id": 4,
-      "url": "./assets/portfolio_img/avinashuhu/9V4A7938.webp",
+      "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764954920/9V4A5453_bwqi0e.jpg",
       "alt": "Avinash & Kuhu - Bridal Hair & Makeup",
       "category": "preparations"
     },
     {
       "id": 5,
-      "url": "./assets/portfolio_img/avinashuhu/9V4A7933.webp",
+      "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764954920/9V4A7692_sgoqkr.jpg",
       "alt": "Avinash & Kuhu - Groom Getting Ready",
       "category": "preparations"
     },
     {
       "id": 6,
-      "url": "./assets/portfolio_img/avinashuhu/9V4A7946.webp",
+      "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764954921/9V4A8664_opetnc.jpg",
       "alt": "Avinash & Kuhu - Wedding Bouquet",
       "category": "details"
     },
     {
       "id": 7,
-      "url": "./assets/portfolio_img/avinashuhu/9V4A7690.webp",
+      "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764954919/9V4A7684_vqc5ek.jpg",
       "alt": "Avinash & Kuhu - Beach Reception",
       "category": "reception"
     },
     {
       "id": 8,
-      "url": "./assets/portfolio_img/avinashuhu/9V4A7447.webp",
+      "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764955140/9V4A6867_xla4se.jpg",
       "alt": "Avinash & Kuhu - Sunset Dance",
       "category": "reception"
     },
     {
       "id": 9,
-      "url": "./assets/portfolio_img/avinashuhu/9V4A7684.webp",
+      "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764955136/9V4A6596_fxywld.jpg",
       "alt": "Avinash & Kuhu - Wedding Rings",
       "category": "details"
     },
     {
       "id": 10,
-      "url": "./assets/portfolio_img/avinashuhu/9V4A7507.webp",
+      "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764955136/9V4A6103_s87tly.jpg",
       "alt": "Avinash & Kuhu - Bridesmaids",
       "category": "group"
     },
     {
       "id": 11,
-      "url": "./assets/portfolio_img/avinashuhu/9V4A7597.webp",
+      "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764955141/9V4A5488_psdkmt.jpg",
       "alt": "Avinash & Kuhu - Groomsmen",
       "category": "group"
     },
     {
       "id": 12,
-      "url": "./assets/portfolio_img/avinashuhu/9V4A6934.webp",
+      "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764954920/9V4A7692_sgoqkr.jpg",
       "alt": "Avinash & Kuhu - First Look",
       "category": "portraits"
     },
     {
       "id": 13,
-      "url": "./assets/portfolio_img/avinashuhu/9V4A6975.webp",
+      "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764955299/9V4A5456_pl02dx.jpg",
       "alt": "Avinash & Kuhu - Wedding Toast",
       "category": "reception"
     },
     {
       "id": 14,
-      "url": "./assets/portfolio_img/avinashuhu/9V4A6899.webp",
+      "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764955136/9V4A6596_fxywld.jpg",
       "alt": "Avinash & Kuhu - Sparkler Send-off",
       "category": "ceremony"
     },
     {
       "id": 15,
-      "url": "./assets/portfolio_img/avinashuhu/9V4A7100.webp",
+      "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764954919/9V4A7809_qpnglc.jpg",
       "alt": "Avinash & Kuhu - Sparkler Send-off",
       "category": "ceremony"
     },
     {
       "id": 16,
-      "url": "./assets/portfolio_img/avinashuhu/9V4A7191.webp",
+      "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764954921/9V4A8683_o3b8y2.jpg",
       "alt": "Avinash & Kuhu - Sparkler Send-off",
       "category": "ceremony"
     }
@@ -732,101 +732,101 @@
       "id": 8,
       "coupleName": "Nick & Kanika",
       "date": "September 22, 2024",
-      "cardImage": "./assets/portfolio_img/Nickkanika/9V4A5813.webp",
+      "cardImage": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764955631/9V4A5813_ednexs.jpg",
       "galleryImages": [
         {
           "id": 1,
-          "url": "./assets/portfolio_img/Nickkanika/9V4A4413.webp",
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764955628/9V4A5582_ynfygs.jpg",
           "alt": "Sourabh & Alka - Beach Ceremony",
           "category": "ceremony"
         },
         {
           "id": 2,
-          "url": "./assets/portfolio_img/Nickkanika/9V4A4442.webp",
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764955638/9V4A6126_m82od6.jpg",
           "alt": "Sourabh & Alka - Oceanside Portraits",
           "category": "portraits"
         },
         {
           "id": 3,
-          "url": "./assets/portfolio_img/Nickkanika/9V4A6272.webp",
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764955655/9V4A6838_ltepor.jpg",
           "alt": "Sourabh & Alka - Vow Exchange",
           "category": "ceremony"
         },
         {
           "id": 4,
-          "url": "./assets/portfolio_img/Nickkanika/9V4A4711.webp",
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764955661/9V4A5020_b93sxj.jpg",
           "alt": "Nick & Kanika - Bridal Hair & Makeup",
           "category": "preparations"
         },
         {
           "id": 5,
-          "url": "./assets/portfolio_img/Nickkanika/9V4A4932.webp",
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764955659/9V4A4898_lieygl.jpg",
           "alt": "Nick & Kanika - Groom Getting Ready",
           "category": "preparations"
         },
         {
           "id": 6,
-          "url": "./assets/portfolio_img/Nickkanika/9V4A5677.webp",
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764955660/9V4A5006_jmk8kx.jpg",
           "alt": "Sourabh & Alka - Wedding Bouquet",
           "category": "details"
         },
         {
           "id": 7,
-          "url": "./assets/portfolio_img/Nickkanika/9V4A5813.webp",
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764955651/9V4A4751_zgvvwe.jpg",
           "alt": "Sourabh & Alka - Beach Reception",
           "category": "reception"
         },
         {
           "id": 8,
-          "url": "./assets/portfolio_img/Nickkanika/9V4A5964.webp",
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764955640/9V4A6178_apdutm.jpg",
           "alt": "Emily & James - Sunset Dance",
           "category": "reception"
         },
         {
           "id": 9,
-          "url": "./assets/portfolio_img/Nickkanika/9V4A6006.webp",
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764955641/9V4A4301_if12v2.jpg",
           "alt": "Sourabh & Alka - Wedding Rings",
           "category": "details"
         },
         {
           "id": 10,
-          "url": "./assets/portfolio_img/Nickkanika/9V4A6103.webp",
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764955634/9V4A6009_nhgxcx.jpg",
           "alt": "Sourabh & Alka - Bridesmaids",
           "category": "group"
         },
         {
           "id": 11,
-          "url": "./assets/portfolio_img/Nickkanika/9V4A6144.webp",
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764955632/9V4A5964_a2cx8n.jpg",
           "alt": "Sourabh & Alka - Groomsmen",
           "category": "group"
         },
         {
           "id": 12,
-          "url": "./assets/portfolio_img/Nickkanika/9V4A6126.webp",
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764955630/9V4A5706_fzgijr.jpg",
           "alt": "Sourabh & Alka - First Look",
           "category": "portraits"
         },
         {
           "id": 13,
-          "url": "./assets/portfolio_img/Nickkanika/9V4A6210.webp",
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764955629/9V4A5655_zickqp.jpg",
           "alt": "Sourabh & Alka - Wedding Toast",
           "category": "reception"
         },
         {
           "id": 14,
-          "url": "./assets/portfolio_img/Nickkanika/9V4A6250.webp",
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764955650/9V4A4711_p01h1h.jpg",
           "alt": "Sourabh & Alka - Sparkler Send-off",
           "category": "ceremony"
         },
          {
           "id": 15,
-          "url": "./assets/portfolio_img/Nickkanika/9V4A6272.webp",
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764955648/9V4A4477_rm9z0l.jpg",
           "alt": "Sourabh & Alka - Sparkler Send-off",
           "category": "ceremony"
         },
          {
           "id": 16,
-          "url": "./assets/portfolio_img/Nickkanika/9V4A6638.webp",
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764955656/9V4A4858_bp4dw9.jpg",
           "alt": "Sourabh & Alka - Sparkler Send-off",
           "category": "ceremony"
         }
