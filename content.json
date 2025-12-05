@@ -380,7 +380,7 @@
         },
         {
           "id": 11,
-          "url": "./assets/portfolio_img/Aman_Gunjeet/9V4A0218.webp",
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764950179/9V4A0377_un0gbx.jpg",
           "alt": "Sarah & Michael - Romantic Kiss",
           "category": "portraits"
         },
@@ -392,7 +392,7 @@
         },
         {
           "id": 13,
-          "url": "./assets/portfolio_img/Aman_Gunjeet/9V4A0380.webp",
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764950199/9V4A0501_s56jta.jpg",
           "alt": "Sarah & Michael - Family Photos",
           "category": "group"
         },
