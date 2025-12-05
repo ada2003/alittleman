@@ -294,7 +294,7 @@
         },
          {
           "id": 14,
-          "image": "./assets/portfolio_img/tanya&shreyas/i7.jpg",
+          "image": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764949220/i3_rckrrs.jpg",
           "alt": "Tanya & Shreyas - Sindoor Ceremony",
           "category": "ceremony"
         },
@@ -582,7 +582,7 @@
         },
         {
           "id": 10,
-          "url": "./assets/portfolio_img/Nachiket-Bhavana/117A9880.webp",
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764953898/117A0366_z8gq2m.webp",
           "alt": "Sourabh & Alka - Bridesmaids",
           "category": "group"
         },
