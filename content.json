@@ -832,6 +832,111 @@
         }
       ]
     }
+    ,
+    {
+      "id": 9,
+      "coupleName": "Chirag Priyanshi",
+      "date": "September 22, 2024",
+      "cardImage": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764957513/9V4A5912_g1opwa.jpg",
+      "galleryImages": [
+        {
+          "id": 1,
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764957518/9V4A6063_yanatg.jpg",
+          "alt": "Sourabh & Alka - Beach Ceremony",
+          "category": "ceremony"
+        },
+        {
+          "id": 2,
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764957526/9V4A6438_qsztic.jpg",
+          "alt": "Sourabh & Alka - Oceanside Portraits",
+          "category": "portraits"
+        },
+        {
+          "id": 3,
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764957524/9V4A6283_brbib3.jpg",
+          "alt": "Sourabh & Alka - Vow Exchange",
+          "category": "ceremony"
+        },
+        {
+          "id": 4,
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764957509/9V4A5619_lp7jep.jpg",
+          "alt": "Nick & Kanika - Bridal Hair & Makeup",
+          "category": "preparations"
+        },
+        {
+          "id": 5,
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764957502/9V4A5144_ojmhb2.jpg",
+          "alt": "Nick & Kanika - Groom Getting Ready",
+          "category": "preparations"
+        },
+        {
+          "id": 6,
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764957478/9V4A3165_ks45an.jpg",
+          "alt": "Sourabh & Alka - Wedding Bouquet",
+          "category": "details"
+        },
+        {
+          "id": 7,
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764957475/9V4A1718_xucohw.jpg",
+          "alt": "Sourabh & Alka - Beach Reception",
+          "category": "reception"
+        },
+        {
+          "id": 8,
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764955640/9V4A6178_apdutm.jpg",
+          "alt": "Emily & James - Sunset Dance",
+          "category": "reception"
+        },
+        {
+          "id": 9,
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764957480/9V4A4103_is7chx.jpg",
+          "alt": "Sourabh & Alka - Wedding Rings",
+          "category": "details"
+        },
+        {
+          "id": 10,
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764955634/9V4A6009_nhgxcx.jpg",
+          "alt": "Sourabh & Alka - Bridesmaids",
+          "category": "group"
+        },
+        {
+          "id": 11,
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764957483/9V4A4121_oaiwtt.jpg",
+          "alt": "Sourabh & Alka - Groomsmen",
+          "category": "group"
+        },
+        {
+          "id": 12,
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764955630/9V4A5706_fzgijr.jpg",
+          "alt": "Sourabh & Alka - First Look",
+          "category": "portraits"
+        },
+        {
+          "id": 13,
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764957488/9V4A4328_zwh6uv.jpg",
+          "alt": "Sourabh & Alka - Wedding Toast",
+          "category": "reception"
+        },
+        {
+          "id": 14,
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764957489/9V4A4329_j2sv55.jpg",
+          "alt": "Sourabh & Alka - Sparkler Send-off",
+          "category": "ceremony"
+        },
+         {
+          "id": 15,
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764957491/9V4A4364_s6qmeh.jpg",
+          "alt": "Sourabh & Alka - Sparkler Send-off",
+          "category": "ceremony"
+        },
+         {
+          "id": 16,
+          "url": "https://res.cloudinary.com/dodzqx4lh/image/upload/v1764957498/9V4A5120_epwezx.jpg",
+          "alt": "Sourabh & Alka - Sparkler Send-off",
+          "category": "ceremony"
+        }
+      ]
+    }
     
 
 
