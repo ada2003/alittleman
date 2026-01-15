@@ -258,14 +258,7 @@
 <body>
     <div class="banner">
         <div class="background-text">THROUGH LOVE LENS</div>
-        <div class="content">
-            <h1 class="about-title">I'm A Little Man.</h1>
-            <p class="subtitle">
-                Wedding & Storytelling Photographers<br>
-                Capturing timeless love through real, unscripted moments.
-            </p>
-            <a href="./portfolio.php" class="cta-button" loading="lazy">EXPLORE OUR WORK</a>
-        </div>
+        
     </div>
 </body>
 </html>
