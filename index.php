@@ -60,7 +60,7 @@ function createFilmCard(couple, index) {
            onload="this.classList.remove('loading')"
            onerror="this.src='https://images.unsplash.com/photo-1606800052052-a08af7148866?w=400&h=600&fit=crop&crop=faces'">
       <div class="film-overlay">
-        <button class="view-film-btn" onclick="viewFilm('${couple.coupleName}', ${couple.id})">View Film →</button>
+        <button class="view-film-btn" onclick="viewFilm('${couple.youtubeLink}')" >View Film →</button>
       </div>
     </div>
     <div class="film-details">
@@ -71,8 +71,8 @@ function createFilmCard(couple, index) {
   return filmCard;
 }
 
-function viewFilm(coupleName, coupleId) {
-  window.location.href = `portfoliogallery.php?couple_id=${coupleId}`;
+function viewFilm(youtubeLink) {
+  window.open(youtubeLink, '_blank');
 }
 
 /* ---------- CONTINUOUS SLIDER IMPLEMENTATION ---------- */
