@@ -126,7 +126,7 @@
                         <li><a href="./portfolio.php?category=photography">Photography</a></li>
                         <li><a href="./portfolio.php?category=films">Films</a></li>
                         <li><a href="./portfolio.php?category=pre-wedding">Pre Wedding</a></li>
-                        <li><a href="./portfolio.php?category=maternity">Maternity</a></li>
+                        <li><a href="./maternity.php">Maternity</a></li>
                         <li><a href="./portfolio.php?category=celebrity">Celebrity</a></li>
                         <li><a href="./portfolio.php?category=personal">Personal</a></li>
                     </ul>
