@@ -61,6 +61,17 @@
             cursor: pointer;
             text-decoration: none;
         }
+
+        /* Offices side by side */
+        .offices-row {
+            display: flex;
+            gap: 30px;
+        }
+        .office-block {
+            flex: 1;
+            min-width: 0; /* allows text to wrap instead of overflowing */
+        }
+
         .contact-form {
             display: flex;
             flex-direction: column;
@@ -103,7 +114,16 @@
         }
         .success { background-color: #d4edda; color: #155724; }
         .error { background-color: #f8d7da; color: #721c24; }
-        
+
+        @media (max-width: 1024px) {
+            /* offices column gets tight before the whole layout stacks -
+               shrink text a touch so both blocks still sit side by side */
+            .office-heading { font-size: 17px; }
+            .office-details { font-size: 15px; }
+            .get-location { font-size: 15px; }
+            .offices-row { gap: 20px; }
+        }
+
         @media (max-width: 768px) {
             .contact-container {
                 grid-template-columns: 1fr;
@@ -115,6 +135,13 @@
             .contact-info {
                 padding-right: 0;
             }
+            .office-heading { font-size: 20px; }
+            .office-details { font-size: 18px; }
+            .get-location { font-size: 18px; }
+            .offices-row {
+                flex-direction: column;
+                gap: 20px;
+            }
         }
     </style>
 </head>
@@ -123,19 +150,34 @@
         <div class="contact-container">
             <div class="contact-info">
                 <h1 class="main-heading">Get in touch<br>with us</h1>
-                
-                <h2 class="office-heading">Jabalpur Office</h2>
-                <div class="office-details">
-                    <div>Jabalpur, M.P. 482002</div>
-                    <div>+91 77419 75188</div>
-                    <div>alittleman@contact.com</div>
+
+                <div class="offices-row">
+                    <div class="office-block">
+                        <h2 class="office-heading">Jabalpur Office</h2>
+                        <div class="office-details">
+                            <div>Jabalpur, M.P. 482002</div>
+                            <div>+91 77419 75188</div>
+                            <div>alittleman@contact.com</div>
+                        </div>
+                        <a href="#" class="get-location">Get location</a>
+                    </div>
+
+                    <div class="office-block">
+                        <h2 class="office-heading">Mumbai Office</h2>
+                        <div class="office-details">
+                            <div>37/289 Anand Nagar,Near Vakola Police station</div>
+                            <div>Santacruz East</div>
+                            <div>Mumbai-400055.
+Land Mark:- Ganesh Temple</div>
+                        </div>
+                        <a href="#" class="get-location">Get location</a>
+                    </div>
                 </div>
-                <a href="#" class="get-location">Get location</a>
             </div>
-            
+
             <form id="contact-form" class="contact-form">
                 <div id="message-container"></div>
-                
+
                 <div class="form-group">
                     <input type="text" id="user_name" name="user_name" class="form-input" placeholder="Write your name here" required>
                 </div>
@@ -145,7 +187,7 @@
                 <div class="form-group">
                     <textarea id="message" name="message" class="form-input message-input" placeholder="Write your messages here" required></textarea>
                 </div>
-                
+
                 <button type="submit" id="send-button" class="send-button">Send to WhatsApp</button>
             </form>
         </div>
@@ -185,7 +227,7 @@
         function showMessage(text, type) {
             const messageContainer = document.getElementById("message-container");
             messageContainer.innerHTML = "";
-            
+
             const div = document.createElement("div");
             div.className = `message ${type}`;
             div.textContent = text;
