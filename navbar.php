@@ -16,7 +16,28 @@
        .dropdown {
            position: relative;
        }
+.navbar-container {
+    height: 70px;         /* your current navbar height — keep this fixed */
+    overflow: visible;    /* let the taller logo spill out visually */
+    display: flex;
+    align-items: center;  /* keeps logo vertically centered in the 90px row */
+}
 
+.navbar {
+    overflow: visible;    /* in case the outer nav also clips overflow */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;        /* stop it getting squeezed by the menu */
+}
+
+.logo img {
+    height: 130px;   /* bump this up as much as you want */
+    width: auto;
+    display: block;
+}
        .dropdown-menu {
            display: none;
            position: absolute;

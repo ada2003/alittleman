@@ -243,12 +243,7 @@
                 "It's Not About The Gear. It's About Trust, Emotion, And Catching Those Fleeting Seconds That Say Everything."
             </h1>
             
-            <div class="play-section">
-                <div class="play-button">
-                    <div class="play-icon"></div>
-                </div>
-                <span class="watch-text">Watch It Now</span>
-            </div>
+            
         </div>
         
         <div class="navigation-arrows">
