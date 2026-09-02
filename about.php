@@ -210,7 +210,7 @@
         <div class="container">
             <div class="image-container">
                 <!-- Replace this src with your actual PNG file path -->
-                <img src="./assets/about.png" alt="The Power Duo" class="duo-image">
+                <img src="./assets/aboutss.png" alt="The Power Duo" class="duo-image">
             </div>
             
             <div class="content-container">
