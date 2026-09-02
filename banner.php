@@ -292,199 +292,64 @@
             }
         }
 
-
-        /* =========================================================
-           MOBILE
-        ========================================================= */
-
-        @media (max-width: 768px) {
-
-            /*
-             * Navbar is above this banner.
-             *
-             * Do NOT use 100vh here.
-             *
-             * 16:9 gives a proper large landscape banner.
-             */
-
-            .banner {
-                width: 100%;
-
-                height: auto;
-
-                min-height: 0;
-
-                aspect-ratio: 16 / 9;
-
-                position: relative;
-
-                display: flex;
-
-                align-items: center;
-
-                justify-content: center;
-
-                overflow: hidden;
-            }
-
-
-            .slider-track {
-                position: absolute;
-
-                top: 0;
-                left: 0;
-
-                width: 800%;
-
-                height: 100%;
-
-                display: flex;
-            }
-
-
-            .slide {
-                width: 12.5%;
-
-                height: 100%;
-
-                flex-shrink: 0;
-
-                /*
-                 * FILL THE ENTIRE BANNER.
-                 *
-                 * No black space.
-                 * No gray space.
-                 */
-
-                background-size: cover;
-
-                background-position: center center;
-
-                background-repeat: no-repeat;
-            }
-
-
-            .banner::before {
-                background: rgba(0, 0, 0, 0.35);
-            }
-
-
-            .content {
-                width: 100%;
-
-                max-width: 100%;
-
-                padding: 0 20px;
-
-                margin: 0;
-
-                text-align: center;
-            }
-
-
-            .about-title {
-                font-size: 58px;
-
-                margin-bottom: 20px;
-            }
-
-
-            .subtitle {
-                font-size: 15px;
-
-                line-height: 170%;
-
-                margin-bottom: 30px;
-            }
-
-
-            .cta-button {
-                width: 230px;
-
-                height: 58px;
-
-                line-height: 56px;
-
-                font-size: 13px;
-            }
-
-
-            .background-text {
-                font-size: 90px;
-            }
-        }
-
-
-        /* =========================================================
-           SMALL PHONES
-        ========================================================= */
-
-      @media (max-width: 480px) {
-
+/* =========================================================
+   MOBILE (unified aspect ratio, no more conflicting overrides)
+========================================================= */
+@media (max-width: 768px) {
     .banner {
         width: 100%;
-        height:80vw;
+        height: auto;
         min-height: 0;
-        aspect-ratio: auto;
-        overflow: hidden;
+        aspect-ratio: 4 / 5;   /* taller box = less horizontal crop, more of the photo shows */
         position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
     }
 
     .slider-track {
+        position: absolute;
+        top: 0;
+        left: 0;
         width: 800%;
         height: 100%;
+        display: flex;
     }
 
     .slide {
         width: 12.5%;
         height: 100%;
         flex-shrink: 0;
-
         background-size: cover;
-        background-position: center center;
+        background-position: top center;   /* keeps subjects visible instead of center-cropping */
         background-repeat: no-repeat;
     }
+
+    .banner::before {
+        background: rgba(0, 0, 0, 0.35);
+    }
+
+    .content {
+        width: 100%;
+        max-width: 100%;
+        padding: 0 20px;
+        margin: 0;
+        text-align: center;
+    }
+
+    .about-title { font-size: 58px; margin-bottom: 20px; }
+    .subtitle { font-size: 15px; line-height: 170%; margin-bottom: 30px; }
+    .cta-button { width: 230px; height: 58px; line-height: 56px; font-size: 13px; }
+    .background-text { font-size: 90px; }
 }
 
-        /* =========================================================
-           VERY SMALL PHONES
-        ========================================================= */
-
-        @media (max-width: 360px) {
-
-            .banner {
-                height: 62vw;
-
-                aspect-ratio: auto;
-            }
-
-
-            .about-title {
-                font-size: 40px;
-            }
-
-
-            .subtitle {
-                font-size: 12px;
-            }
-
-
-            .cta-button {
-                width: 195px;
-
-                height: 50px;
-
-                line-height: 48px;
-
-                font-size: 10px;
-            }
-
-
-            .background-text {
-                font-size: 60px;
-            }
-        }
-
+@media (max-width: 360px) {
+    .about-title { font-size: 40px; }
+    .subtitle { font-size: 12px; }
+    .cta-button { width: 195px; height: 50px; line-height: 48px; font-size: 10px; }
+    .background-text { font-size: 60px; }
+}
 
         /* =========================================================
            ANIMATIONS
