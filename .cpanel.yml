@@ -1,0 +1,20 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/tus61prte2rn/public_html/
+    - /bin/cp index.php $DEPLOYPATH
+    - /bin/cp about.php $DEPLOYPATH
+    - /bin/cp banner.php $DEPLOYPATH
+    - /bin/cp contact.php $DEPLOYPATH
+    - /bin/cp content.json $DEPLOYPATH
+    - /bin/cp feedback.php $DEPLOYPATH
+    - /bin/cp footer.php $DEPLOYPATH
+    - /bin/cp gallery.php $DEPLOYPATH
+    - /bin/cp maternity.php $DEPLOYPATH
+    - /bin/cp navbar.php $DEPLOYPATH
+    - /bin/cp portfolio.php $DEPLOYPATH
+    - /bin/cp portfoliogallery.php $DEPLOYPATH
+    - /bin/cp send_email.php $DEPLOYPATH
+    - /bin/cp style.css $DEPLOYPATH
+    - /bin/cp video.php $DEPLOYPATH
+    - /bin/cp -R assets $DEPLOYPATH
