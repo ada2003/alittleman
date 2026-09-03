@@ -262,7 +262,7 @@
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-section">
-                <img src="./assets/whitelogo.png" alt="A Little Man Logo" class="footer-logo">
+                <img src="./whitelogo.png" alt="A Little Man Logo" class="footer-logo">
                 <p class="footer-description">
                     Capturing honest love stories across India and beyond.<br>
                     Made with heart, told through our lens.<br>
