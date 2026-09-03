@@ -159,7 +159,7 @@
                             <div>+91 77419 75188</div>
                             <div>alittleman@contact.com</div>
                         </div>
-                        <a href="#" class="get-location">Get location</a>
+                       
                     </div>
 
                     <div class="office-block">
@@ -170,7 +170,7 @@
                             <div>Mumbai-400055.
 Land Mark:- Ganesh Temple</div>
                         </div>
-                        <a href="#" class="get-location">Get location</a>
+                       
                     </div>
                 </div>
             </div>

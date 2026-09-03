@@ -25,10 +25,27 @@
         ========================================================= */
 
         .feedback-container {
-            padding: 100px 20px 50px;
+            padding: 70px 20px 50px;
             max-width: 1200px;
             margin: 0 auto;
             text-align: center;
+        }
+
+
+        /* =========================================================
+           TESTIMONIAL HEADING
+        ========================================================= */
+
+        .testimonial-heading {
+            font-family: Oswald, sans-serif;
+            font-weight: 400;
+            font-size: 52px;
+            line-height: 1.2;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #111;
+            text-align: center;
+            margin: 0 0 70px;
         }
 
 
@@ -83,7 +100,9 @@
         }
 
 
-        /* Slider viewport */
+        /* =========================================================
+           SLIDER VIEWPORT
+        ========================================================= */
 
         .testimonial-slider {
             position: relative;
@@ -117,7 +136,7 @@
             position: absolute;
             left: -80px;
             top: -20px;
-            font-family: Rozha One;
+            font-family: "Rozha One", serif;
         }
 
 
@@ -126,7 +145,7 @@
         ========================================================= */
 
         .testimonial-text {
-            font-family: Raleway;
+            font-family: Raleway, sans-serif;
             font-weight: 400;
             font-size: 20px;
             line-height: 160%;
@@ -148,7 +167,7 @@
         }
 
         .client-names {
-            font-family: Oswald;
+            font-family: Oswald, sans-serif;
             font-size: 20px;
             line-height: 180%;
             letter-spacing: 0%;
@@ -158,7 +177,7 @@
         }
 
         .client-type {
-            font-family: Oswald;
+            font-family: Oswald, sans-serif;
             font-weight: 400;
             font-size: 30px;
             line-height: 180%;
@@ -212,7 +231,7 @@
             color: #333;
 
             font-size: 18px;
-            font-family: Oswald;
+            font-family: Oswald, sans-serif;
 
             display: flex;
             align-items: center;
@@ -248,6 +267,11 @@
 
         @media (max-width: 1024px) {
 
+            .testimonial-heading {
+                font-size: 46px;
+                margin-bottom: 60px;
+            }
+
             .stats-section {
                 gap: 40px;
             }
@@ -281,6 +305,16 @@
         ========================================================= */
 
         @media (max-width: 768px) {
+
+            .feedback-container {
+                padding: 60px 20px 40px;
+            }
+
+            .testimonial-heading {
+                font-size: 40px;
+                letter-spacing: 1.5px;
+                margin-bottom: 55px;
+            }
 
             .stats-section {
                 gap: 30px;
@@ -341,6 +375,16 @@
 
         @media (max-width: 640px) {
 
+            .feedback-container {
+                padding: 50px 16px 35px;
+            }
+
+            .testimonial-heading {
+                font-size: 32px;
+                letter-spacing: 1px;
+                margin-bottom: 55px;
+            }
+
             .stats-section {
                 gap: 20px;
             }
@@ -358,11 +402,13 @@
             .testimonial-text {
                 font-size: 20px;
                 padding-left: 20px;
+                padding-right: 20px;
                 text-align: center;
             }
 
             .client-info {
                 padding-left: 20px;
+                padding-right: 20px;
                 text-align: center;
             }
 
@@ -460,6 +506,12 @@
 
         @media (max-width: 480px) {
 
+            .testimonial-heading {
+                font-size: 28px;
+                letter-spacing: 1px;
+                margin-bottom: 50px;
+            }
+
             .stats-section {
                 flex-direction: column;
                 align-items: center;
@@ -507,6 +559,15 @@
 <body>
 
     <div class="feedback-container">
+
+        <!-- =====================================================
+             TESTIMONIAL HEADING
+        ====================================================== -->
+
+        <h2 class="testimonial-heading">
+            TESTIMONIALS
+        </h2>
+
 
         <!-- =====================================================
              TESTIMONIAL SECTION
@@ -560,7 +621,7 @@
                     <div class="client-info">
 
                         <div class="client-names">
-                            <b>- Simran Arora </b> / Happy Couple
+                            <b>- Simran Arora</b> / Happy Couple
                         </div>
 
                     </div>
@@ -581,7 +642,7 @@
                     <div class="client-info">
 
                         <div class="client-names">
-                            <b>- Yamini Singh </b> / Happy Couple
+                            <b>- Yamini Singh</b> / Happy Couple
                         </div>
 
                     </div>
@@ -602,7 +663,7 @@
                     <div class="client-info">
 
                         <div class="client-names">
-                            <b>- Upma Bisen </b> / Happy Couple
+                            <b>- Upma Bisen</b> / Happy Couple
                         </div>
 
                     </div>
